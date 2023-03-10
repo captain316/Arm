@@ -136,7 +136,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/huo/Downloads/ur3_ws/build/gtest/cmake_install.cmake")
-  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/ur3_move/cmake_install.cmake")
+  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/ur_msgs/cmake_install.cmake")
 
 endif()
 

@@ -133,7 +133,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=ur3_move
+CATKIN_WHITELIST_PACKAGES:STRING=ur_msgs
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -1325,7 +1325,7 @@ laser_scan_splitter_nodelet_LIB_DEPENDS:STATIC=general;laser_scan_splitter;
 layers_LIB_DEPENDS:STATIC=general;costmap_2d;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libmoveit_move_group_capabilities_base.so
+lib:FILEPATH=/opt/ros/melodic/lib/librostime.so
 
 //Value Computed by CMake
 lslidar_n301_BINARY_DIR:STATIC=/home/huo/Downloads/ur3_ws/build/omnicar/LSLIDAR_N301/lslidar_n301/lslidar_n301
@@ -1815,8 +1815,7 @@ ur_gazebo_SOURCE_DIR:STATIC=/home/huo/Downloads/ur3_ws/src/arm/ur_control/fmauch
 //Value Computed by CMake
 ur_msgs_BINARY_DIR:STATIC=/home/huo/Downloads/ur3_ws/build/arm/ur_control/ur_msgs
 
-//The directory containing a CMake configuration file for ur_msgs.
-ur_msgs_DIR:PATH=/home/huo/Downloads/ur3_ws/devel/share/ur_msgs/cmake
+ur_msgs_DIR:PATH=
 
 //Value Computed by CMake
 ur_msgs_IS_TOP_LEVEL:STATIC=OFF
