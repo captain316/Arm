@@ -136,7 +136,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/huo/Downloads/ur3_ws/build/gtest/cmake_install.cmake")
+  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/Universal_Robots_ROS_Driver/ur_dashboard_msgs/cmake_install.cmake")
   include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/ur_msgs/cmake_install.cmake")
+  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/Universal_Robots_ROS_Driver/controller_stopper/cmake_install.cmake")
+  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/fmauch_universal_robot/ur_description/cmake_install.cmake")
+  include("/home/huo/Downloads/ur3_ws/build/arm/ur_control/Universal_Robots_ROS_Driver/ur_robot_driver/cmake_install.cmake")
 
 endif()
 

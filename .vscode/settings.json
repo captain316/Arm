@@ -9,5 +9,8 @@
         "/opt/intel/openvino_2021/deployment_tools/model_optimizer",
         "/opt/intel/openvino_2021/data_processing/dl_streamer/python",
         "/opt/intel/openvino_2021/data_processing/gstreamer/lib/python3.8/site-packages"
-    ]
+    ],
+    "files.associations": {
+        "algorithm": "cpp"
+    }
 }

@@ -808,3 +808,69 @@ events:
         
       exitCode: 2
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "omnicar/navigation/teb_local_planner/CMakeLists.txt:67 (CHECK_CXX_COMPILER_FLAG)"
+    checks:
+      - "Performing Test COMPILER_SUPPORTS_CXX11"
+    directories:
+      source: "/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l"
+      binary: "/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/melodic/share/cmake_modules/cmake/../../../share/cmake_modules/cmake/Modules;/home/huo/Downloads/ur3_ws/src/omnicar/navigation/teb_local_planner/cmake_modules"
+    buildResult:
+      variable: "COMPILER_SUPPORTS_CXX11"
+      cached: true
+      stdout: |
+        Change Dir: /home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_23c43/fast && /usr/bin/make  -f CMakeFiles/cmTC_23c43.dir/build.make CMakeFiles/cmTC_23c43.dir/build
+        make[1]: Entering directory '/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l'
+        Building CXX object CMakeFiles/cmTC_23c43.dir/src.cxx.o
+        /usr/lib/ccache/c++ -DCOMPILER_SUPPORTS_CXX11  -std=c++11 -o CMakeFiles/cmTC_23c43.dir/src.cxx.o -c /home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l/src.cxx
+        Linking CXX executable cmTC_23c43
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23c43.dir/link.txt --verbose=1
+        /usr/lib/ccache/c++ -rdynamic CMakeFiles/cmTC_23c43.dir/src.cxx.o -o cmTC_23c43 
+        make[1]: Leaving directory '/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-dVTr6l'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "omnicar/navigation/teb_local_planner/CMakeLists.txt:68 (CHECK_CXX_COMPILER_FLAG)"
+    checks:
+      - "Performing Test COMPILER_SUPPORTS_CXX0X"
+    directories:
+      source: "/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL"
+      binary: "/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/melodic/share/cmake_modules/cmake/../../../share/cmake_modules/cmake/Modules;/home/huo/Downloads/ur3_ws/src/omnicar/navigation/teb_local_planner/cmake_modules"
+    buildResult:
+      variable: "COMPILER_SUPPORTS_CXX0X"
+      cached: true
+      stdout: |
+        Change Dir: /home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b867a/fast && /usr/bin/make  -f CMakeFiles/cmTC_b867a.dir/build.make CMakeFiles/cmTC_b867a.dir/build
+        make[1]: Entering directory '/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL'
+        Building CXX object CMakeFiles/cmTC_b867a.dir/src.cxx.o
+        /usr/lib/ccache/c++ -DCOMPILER_SUPPORTS_CXX0X  -std=c++0x -o CMakeFiles/cmTC_b867a.dir/src.cxx.o -c /home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL/src.cxx
+        Linking CXX executable cmTC_b867a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b867a.dir/link.txt --verbose=1
+        /usr/lib/ccache/c++ -rdynamic CMakeFiles/cmTC_b867a.dir/src.cxx.o -o cmTC_b867a 
+        make[1]: Leaving directory '/home/huo/Downloads/ur3_ws/build/CMakeFiles/CMakeScratch/TryCompile-cEqkjL'
+        
+      exitCode: 0
+...

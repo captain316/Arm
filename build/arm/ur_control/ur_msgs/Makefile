@@ -242,76 +242,6 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make arm/ur_control/ur_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 arm/ur_control/ur_msgs/CMakeFiles/ur_msgs_generate_messages.dir/rule:
 	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/ur_control/ur_msgs/CMakeFiles/ur_msgs_generate_messages.dir/rule
 .PHONY : arm/ur_control/ur_msgs/CMakeFiles/ur_msgs_generate_messages.dir/rule
@@ -633,11 +563,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... ur_msgs_gencpp"
 	@echo "... ur_msgs_generate_messages"
 	@echo "... ur_msgs_generate_messages_cpp"
