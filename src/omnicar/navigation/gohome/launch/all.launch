@@ -1,0 +1,21 @@
+<launch>
+
+    <node pkg="odom_pub" name="codingpublish" type="recv_coding" output="screen">
+    </node>
+
+    <node pkg="odom_pub" name="publish_odom_topic" type="odom_pub_real" output="screen">
+    </node>
+
+    <node pkg="cmd_vel_pub" name="cmd_vel_pub" type="send_message2_Raspberry" output="screen">
+    </node>
+
+    <include file="$(find robot_description)/launch/display_new.launch">
+    </include>
+
+    <include file="$(find amcl)/launch/diff_robot.launch">
+    </include>
+    
+    <include file="$(find gohome)/launch/nav_dwa.launch">
+    </include>
+
+</launch>

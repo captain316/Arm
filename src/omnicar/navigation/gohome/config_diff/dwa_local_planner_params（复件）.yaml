@@ -1,0 +1,40 @@
+DWAPlannerROS: 
+  acc_lim_th: 3.2 #2(4.19)
+  acc_lim_x: 0.5 #0.5(4.19)
+  acc_lim_y: 0 
+
+
+  max_vel_x: 0.5 # 0.5(4.19)    0.2
+  min_vel_x: 0.0  #make sure min_vel_x * sim_time < 2 * xy_goal_tolerance
+
+  max_vel_y: 0 
+  min_vel_y: 0 
+
+  max_vel_trans: 0.6  #0.5(4.19)
+  min_vel_trans: 0.1 
+
+  max_vel_theta: 0.4  #0.4(4.19)
+  min_vel_theta: -0.4  # 0.1 4.23
+  sim_time: 3.5  #3 4.23  
+  sim_granularity: 0.025 
+  goal_distance_bias: 20.0 
+  path_distance_bias: 28.0  #32
+  occdist_scale: 0.02  #0.02 4.25  0.01 2.23  move off the zhang ai wu de quan zhong 
+  stop_time_buffer: 0.2 #0.2 4.23 
+  oscillation_reset_dist: 0.2 #0.05 4.23
+  oscillation_reset_angle: 0.2 #rad0.2
+  twirling_scale: 0.0 # no ratation
+  forward_point_distance: 0.325 
+  scaling_speed: 0.25 
+  max_scaling_factor: 0.2 
+  vx_samples: 20 
+  vy_samples: 0 
+  vtheta_samples: 40 
+  sim_period: 0.33 #0.1 
+
+  xy_goal_tolerance: 0.2 
+  yaw_goal_tolerance: 0.7 
+  latch_xy_goal_tolerance: false
+
+  theta_stopped_vel: 0.01 
+  trans_stopped_vel: 0.1

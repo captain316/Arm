@@ -1,0 +1,60 @@
+<launch>
+    <node pkg="amcl" type="amcl" name="amcl">
+
+      <param name="use_map_topic" value="true"/>    <!--    AMCL订阅地图主题    -->
+
+      <!-- 1、总体过滤参数    -->
+      <param name="min_particles" value="500"/>     <!--    最小允许的颗粒数    -->
+      <param name="max_particles" value="5000"/>    <!--    最大允许的颗粒数    -->
+      <param name="kld_err" value="0.05"/>          <!--    真实分布和估计分布之间的最大误差    -->
+      <param name="kld_z" value="0.99"/>
+      <param name="update_min_d" value="0.2"/>      <!--    执行过滤器更新之前需要执行的平移运动    -->
+      <param name="update_min_a" value="0.5"/>      <!--    执行过滤器更新之前需要执行的旋转运动    -->
+      <param name="resample_interval" value="1"/>   <!--    重新采样之前所需的过滤器更新数  -->
+      <param name="transform_tolerance" value="0.1"/>   <!-- 将发布的变换后期化的时间，以指示此变换在未来有效   -->
+      <param name="recovery_alpha_slow" value="0.001"/>   <!-- 用于决定何时通过添加随机姿态来恢复，默认为0 -->
+      <param name="recovery_alpha_fast" value="0.1"/>   <!-- 决定何时通过添加随机姿态来恢复，默认为0    -->
+      <!--  初始姿态均值，用以初始化具有高斯分布的滤波器   -->
+      <param name="initial_pose_x" value="0.0"/>       
+      <param name="initial_pose_y" value="0.0"/>
+      <param name="initial_pose_a" value="0.0"/>
+      <!--  初始姿态协方差，用于初始化具有高斯分布的滤波器  -->
+      <param name="initial_cov_xx" value="0.25"/>
+      <param name="initial_cov_yy" value="0.25"/>
+      <param name="initial_cov_aa" value="0.06854"/>
+
+      <param name="gui_publish_rate" value="10.0"/>
+
+      <!--  2、激光模型参数 -->
+      <param name="laser_min_range" value="-1.0"/>  <!-- 要考虑的最小扫描范围，-1.0代表激光器报告的最小范围 -->
+      <param name="laser_max_range" value="-1.0"/>  <!-- 要考虑的最大扫描范围，-1.0代表激光器报告的最大范围 -->
+      <param name="laser_max_beams" value="30"/>    <!-- 在更新过滤器时要在每次扫描中使用多少均匀间隔光束   -->
+      <!-- 4个波束模型，总和应该为1啊？ -->
+      <param name="laser_z_hit" value="0.5"/>       
+      <param name="laser_z_short" value="0.05"/>    
+      <param name="laser_z_max" value="0.05"/>
+      <param name="laser_z_rand" value="0.5"/>
+
+      <param name="laser_sigma_hit" value="0.2"/>   <!--    模型z_hit中使用的高斯模型的标准偏差 -->
+      <param name="laser_lambda_short" value="0.1"/>    <!--    模型z_short的指数衰减参数 -->
+      <param name="laser_model_type" value="likelihood_field"/> <!--    使用哪个模型，beam、likelihood_field、likelihood_field_prob -->
+      <!-- <param name="laser_model_type" value="beam"/> -->
+      <param name="laser_likelihood_max_dist" value="2.0"/>
+      
+      <!-- 3、里程计模型参数    -->
+      <!--  diff、omni、diff-corrected、omni-corrected  -->
+      <param name="odom_model_type" value="omni"/>  <!--    车辆类型    -->
+      <!-- 噪声参数，alpha5仅在omni模型中有效 -->
+      <param name="odom_alpha1" value="0.2"/>   <!-- 转角分量的运动噪声 -->
+      <param name="odom_alpha2" value="0.2"/>   <!-- 横向分量运动噪声 -->
+      <param name="odom_alpha3" value="0.8"/>   <!-- 纵向分量运动噪声 -->
+      <param name="odom_alpha4" value="0.2"/>   <!-- 斜角分量运动噪声 -->
+      <param name="odom_alpha5" value="0.1"/>
+
+      <param name="odom_frame_id" value="odom"/>
+      <param name="global_frame_id" value="map"/>
+      <param name="tf_broadcast" value="true"/>
+    
+    </node>
+    </launch>
+    

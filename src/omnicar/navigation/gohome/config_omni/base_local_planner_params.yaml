@@ -1,0 +1,38 @@
+controller_frequency: 10.0
+TrajectoryPlannerROS:
+  acc_lim_theta: 0.75
+  acc_lim_x: 0.50
+  acc_lim_y: 0.50
+
+  max_vel_x: 1.30
+  min_vel_x: -1.30
+
+  max_vel_y: 1.30
+  min_vel_y: -1.30
+  
+  max_rotational_vel: 1.5
+  min_in_place_rotational_vel: 1.0
+  
+  escape_vel: -0.1
+
+  meter_scoring: true
+
+  # if use omni robot set true(maybe)
+  holonomic_robot: true
+
+  yaw_goal_tolerance: 0.17  # 0.05
+  xy_goal_tolerance: 0.1    # 0.1
+  sim_time: 1.5
+  sim_granularity: 0.025
+  vx_samples: 6
+  vtheta_samples: 20
+  goal_distance_bias: 0.8
+  path_distance_bias: 0.2
+  occdist_scale: 0.01
+  heading_lookahead: 0.325
+  dwa: true
+  oscillation_reset_dist: 0.05
+  prune_plan: true
+ 
+  
+
