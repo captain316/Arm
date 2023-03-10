@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+	<xacro:macro name="wheel_macro" params="suffix parent x_pos y_pos y_add y_add_2">
+		
+		<joint name="${suffix}_joint1" type="continuous">
+			<origin xyz="${x_pos} ${y_pos} -0.20" rpy="0. 0. 0."/> <!--这里的-0.20 = -0.09(车体上半身的一半) - 0.11(link1管的1半)-->
+			<axis xyz="0. 0. 1."/>					
+			<parent link="${parent}"/>
+			<child link="${suffix}_link1"/>
+			
+			<calibration rising="0."/>
+			<dynamics damping="1." friction="0."/>
+			<inertial>
+				<origin xyz="${x_pos} ${y_pos} -0.25" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+			</inertial>
+		</joint>
+
+		
+		<link name="${suffix}_link1">
+			<visual>
+				<origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+				<geometry>
+					<box size="0.03 0.03 0.22"/>
+				</geometry>
+				<material name="Black">
+					<color rgba="0. 0. 0. 0"/>
+				</material>
+			</visual>
+			<collision>
+				<geometry>
+					<box size="0.03 0.03 0.22"/>
+				</geometry>
+			</collision>
+			<inertial>
+				<origin xyz="0. 0. 0." rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+			</inertial>
+		</link>
+		
+		
+		<joint name="${suffix}_joint2" type="fixed">
+			<origin xyz="0 ${y_add} -0.095" rpy="0. 0. 0."/> <!--0.085 = 0.11 - 0.03 + 0.015-->
+			<parent link="${suffix}_link1"/>
+			<child link="${suffix}_link2"/>
+			<calibration rising="0."/>
+			<dynamics damping="0." friction="0."/>
+			<inertial>
+				<origin xyz="0 ${y_add} -0.085" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+			</inertial>
+		</joint>
+
+		<link name="${suffix}_link2">
+			<visual>
+				<origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+				<geometry>
+					<box size="0.03 0.03 0.03"/>
+				</geometry>
+				<material name="Black">
+					<color rgba="0. 0. 0. 1"/>
+				</material>
+			</visual>
+			<collision>
+				<geometry>
+					<box size="0.03 0.03 0.03"/>
+				</geometry>
+			</collision>
+			<inertial>
+				<origin xyz="0. 0. 0." rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.1" ixy="0.1" ixz="0.1" iyy="0.1" iyz="0.1" izz="0.1"/>
+			</inertial>
+		</link>
+
+		<joint name="${suffix}_joint3" type="continuous">
+			<origin xyz="0 ${y_add_2} 0" rpy="0. 0. 0."/>
+			<axis xyz="0. 1. 0."/>					
+			<parent link="${suffix}_link2"/>
+			<child link="${suffix}_link3"/>
+			<calibration rising="0."/>
+			<dynamics damping="1." friction="0."/>
+			<inertial>
+				<origin xyz="0 ${y_add_2} 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+			</inertial>
+		</joint>
+
+		<link name="${suffix}_link3">
+			<visual>
+				<origin xyz="0. 0. 0." rpy="-${pi/2} 0. 0."/>
+				<geometry>
+					<cylinder radius="${cylinder_radius}" length="${cylinder_length}"/>
+				</geometry>
+				<material name="White">
+					<color rgba="1. 1. 1. 1."/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0. 0. 0." rpy="-${pi/2} 0. 0."/>
+				<geometry>
+					<cylinder radius="${cylinder_radius}" length="${cylinder_length}"/>
+				</geometry>
+			</collision>
+			<inertial>
+				<origin xyz="0. 0. 0." rpy="-${pi/2} 0. 0."/>
+				<mass value="${wheel_mass}"/>
+				<inertia ixx="${wheel_mass * cylinder_radius**2 / 2}" ixy="0." ixz="0."
+						  	 iyy="${wheel_mass * (cylinder_radius**2 / 4 + cylinder_length**2 / 12)}" iyz="0."
+						 	 	 izz="${wheel_mass * (cylinder_radius**2 / 4 + cylinder_length**2 / 12)}"/>
+			</inertial>
+		</link>
+		
+
+		<transmission name="${suffix}_trans1">
+			<type>transmission_interface/SimpleTransmission</type>
+			<joint name="${suffix}_joint1">
+				<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+			</joint>
+			<actuator name="${suffix}_motor1">
+				<mechanicalReduction>1</mechanicalReduction>
+				<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+			</actuator>
+		</transmission>
+
+		<transmission name="${suffix}_trans3">
+			<type>transmission_interface/SimpleTransmission</type>
+			<joint name="${suffix}_joint3">
+				<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+			</joint>
+			<actuator name="${suffix}_motor3">
+				<mechanicalReduction>1</mechanicalReduction>
+				<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+			</actuator>
+		</transmission>
+
+		<gazebo reference="${suffix}_link1">
+			<selfCollide>false</selfCollide>
+			<mu1 value="0.05"/>
+			<mu2 value="0.05"/>
+			<material>Gazebo/Black</material>
+		</gazebo>
+
+		<gazebo reference="${suffix}_link2">
+			<selfCollide>false</selfCollide>
+			<mu1 value="0.05"/>
+			<mu2 value="0.05"/>
+			<material>Gazebo/Black</material>
+		</gazebo>
+
+		<gazebo reference="${suffix}_link3">
+			<selfCollide>false</selfCollide>
+			<mu1 value="0.80"/>
+			<mu2 value="0.80"/>
+			<material>Gazebo/Black</material>
+		</gazebo>
+	</xacro:macro>
+</robot>

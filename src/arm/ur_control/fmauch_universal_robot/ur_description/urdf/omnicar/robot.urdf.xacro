@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<robot name="omnidirectional_four-wheeled_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:property name="x_size" value="0.70"/>			<!-- 整个车的长 -->	
+<xacro:property name="y_size" value="0.57"/>			<!-- 整个车的宽 -->
+<xacro:property name="z_size" value="0.30"/>			<!-- 车体上半身的高度 -->
+<xacro:property name="body_mass" value="30.0"/>			
+<xacro:property name="cylinder_radius" value="0.12"/>	<!-- 轮子的半径 -->
+<xacro:property name="cylinder_length" value="0.08"/>	<!-- 轮子的宽度 -->
+<xacro:property name="wheel_mass" value="0.5"/>			
+<xacro:property name="effort_limit" value="1."/>
+<xacro:property name="velocity_limit" value="5."/>
+<xacro:property name="control_period" value="0.001"/>		
+
+<xacro:include filename="$(find robot_description)/urdf/wheel.urdf.xacro"/>
+<!-- xacro:include filename="$(find omnidirectional_four-wheeled_robot)/urdf/camera.urdf.xacro"/ -->
+<!-- xacro:include filename="$(find robot_description)/urdf/laser.urdf.xacro"/ -->
+	<link name="base_link"/>
+	<joint name="body_base_joint" type="fixed">
+		<origin xyz="0. 0. 0.44" rpy="0. 0. 0."/>  <!-- 0.44 = 0.12(轮子半径)+0.2(杆的长度)+0.15(车体上身的一半)-0.03(轮子半径和杆多的一部分) -->
+		<parent link="base_link"/>
+		<child link="body_link"/>
+		<calibration rising="0."/>
+		<dynamics damping="0." friction="0."/>
+	</joint>
+	<link name="body_link">
+		<visual>
+			<origin xyz="0. 0. 0." rpy="0.0 0.0 0.0" />
+			<geometry>
+				<box size="${x_size} ${y_size} ${z_size}"/>
+			</geometry>
+			<material name="White">
+				<color rgba="1. 1. 1. 1."/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<box size="${x_size} ${y_size} ${z_size}"/>
+			</geometry>
+		</collision>
+
+		<inertial>
+			<origin xyz="0. 0. 0."/>
+			<mass value="${body_mass}"/>
+			<inertia ixx="${body_mass * (y_size**2 + z_size**2) / 12}" ixy="0." ixz="0."
+					 iyy="${body_mass * (x_size**2 + z_size**2) / 12}" iyz="0."
+					 izz="${body_mass * (x_size**2 + y_size**2) / 12}"/>
+		</inertial>
+	</link>
+
+	<joint name="laser_joint" type="fixed">
+		<!-- d = 0.08, h = 0.0791 -->
+		<!--origin xyz="${x_size/2 - 0.04} 0. ${z_size/2 + 0.03955}" rpy="0. 0. 0."/-->
+		<origin xyz="${x_size/2 + 0.0485} 0. ${z_size/2 - 0.03955}" rpy="0. 0. 0."/>	
+		<parent link="body_link"/>
+		<child link="laser"/>
+		<calibration rising="0."/>
+		<dynamics damping="0." friction="0."/>
+	</joint>
+
+	<link name="laser">
+		<visual>
+			<origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+			<geometry>
+				<cylinder radius="0.04" length="0.0791"/>
+			</geometry>
+			<material name="Black">
+				<color rgba="0. 0. 0. 1."/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<box size="0.05 0.05 0.05"/>
+			</geometry>
+		</collision>
+
+		<inertial>
+			<origin xyz="0. 0. 0."/>
+			<mass value="0."/>
+			<inertia ixx="0." ixy="0." ixz="0." iyy="0." iyz="0." izz="0."/>
+		</inertial>
+	</link>
+
+<!--	<joint name="base_joint" type="fixed">
+		<origin xyz="0. 0. 0.3" rpy="0. 0. 0."/>
+		<parent link="base_link"/>
+		<child link="body_link"/>
+		<calibration rising="0."/>
+		<dynamics damping="0." friction="0."/>
+	</joint>	-->
+
+	<!-- x_pos这里的 0.12 = 轮子半径  -->
+	<!-- y_pos这里的 0.15 = 0.08(轮子的宽) + 0.03(link2的长) + 0.03(link1的宽) -->
+	<!-- y_add这里的0.03 = 管的宽度 -->
+	<!-- y_add_2这里的0.055 = 0.015(管长度一半) + 0.04(轮子宽度) -->
+	<xacro:wheel_macro suffix="FLwheel" parent="body_link" x_pos="${x_size/2 - 0.12}"  y_pos="${y_size/2 - 0.15}" y_add="0.03" y_add_2="0.055"/>
+	<xacro:wheel_macro suffix="FRwheel" parent="body_link" x_pos="${x_size/2 - 0.12}"  y_pos="${-y_size/2 + 0.15}" y_add="-0.03" y_add_2="-0.055"/>
+	<xacro:wheel_macro suffix="BLwheel" parent="body_link" x_pos="${-x_size/2 + 0.12}" y_pos="${y_size/2 - 0.15}" y_add="0.03" y_add_2="0.055"/>
+	<xacro:wheel_macro suffix="BRwheel" parent="body_link" x_pos="${-x_size/2 + 0.12}" y_pos="${-y_size/2 + 0.15}" y_add="-0.03" y_add_2="-0.055"/>
+<!--	<xacro:camera_macro prefix="camera" parent="base_link" xyz="${x_size/2} 0. ${z_size/2}"/> -->
+	<!-- <xacro:laser_macro prefix="FrontLaser" parent="body_link" xyz="${x_size/4} 0. ${z_size/2 + 1.e-2}" rpy="0. 0. 0."/>
+	<xacro:laser_macro prefix="RearLaser" parent="body_link" xyz="${-x_size/4} 0. ${z_size/2 + 1.e-2}" rpy="0. 0. ${-pi}"/> -->
+
+	<gazebo reference="body_link">
+		<selfCollide>false</selfCollide>
+		<mu1 value="0.05"/> 
+		<mu2 value="0.05"/>
+	</gazebo>
+<!--
+	<gazebo reference="laser">
+		<selfCollide>false</selfCollide>
+		<material>Gazebo/Black</material>
+	</gazebo> -->
+	<gazebo reference="laser">
+		<sensor type="ray" name="laser_sensor">
+			<pose>0. 0. 0. 0. 0. 0.</pose>
+			<visualize>true</visualize>
+			<update_rate>40.</update_rate>
+			<ray>
+				<scan>
+					<horizontal>
+						<samples>1080</samples>
+						<resolution>0.25</resolution>
+						<min_angle>${-3*pi/4}</min_angle>
+						<max_angle>${3*pi/4}</max_angle>
+					</horizontal>
+				</scan>
+				<range>
+					<min>0.1</min>
+					<max>30.</max>
+					<resolution>1.e-3</resolution>
+				</range>
+				<noise>
+					<!-- Noise parameters based on published spec for Hokuyo laser 			-->
+					<!-- achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and 		-->
+					<!-- stddev of 0.01m will put 99.7% of samples within 0.03m of the true 	-->
+					<!-- reading. 																	-->
+					<type>gaussian</type>
+					<mean>0.</mean>
+					<stddev>1.e-3</stddev>
+				</noise>
+			</ray>
+			<plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+				<topicName>/scan</topicName>
+				<frameName>laser</frameName>
+			</plugin>
+		</sensor>
+	</gazebo>
+	<gazebo>
+		<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+			<controlPeriod>${control_period}</controlPeriod>
+			<legacyModeNS>true</legacyModeNS>
+			<robotParam>/robot_description</robotParam>
+			<robotNamespace>/omnidirectional_four_wheeled_robot</robotNamespace>
+			<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+		</plugin>
+		<plugin name="imu_plugin" filename="libgazebo_ros_imu.so"> <!-- can delete IMU -->
+			<alwaysOn>true</alwaysOn>
+			<bodyName>body_link</bodyName>
+			<topicName>/imu</topicName>
+			<serviceName>imu_service</serviceName>
+			<gaussianNoise>1.e-3</gaussianNoise>
+			<updateRate>50.</updateRate>
+		</plugin>
+	</gazebo>
+</robot>

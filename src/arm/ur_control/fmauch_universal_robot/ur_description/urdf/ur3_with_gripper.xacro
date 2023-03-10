@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"   name="ur3_robot" >
+       
+  <!-- ur3 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur3.xacro"/>
+
+  <!--gripper-->
+  <xacro:include filename="$(find ur_description)/urdf/gripper.urdf.xacro" />
+  
+  <!--
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.016" rpy="0.0 0.0 0.0" />
+  </joint>
+  -->
+
+ <!--smc_gripper-->
+ <xacro:smc_gripper prefix="" parent="tool0" >
+	<origin xyz="0 0 0" rpy="0 0 0"/> 
+ </xacro:smc_gripper>
+ 
+
+</robot>

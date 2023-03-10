@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="smc_gripper">
+
+    <!-- Macro function to instanciate URDF model of the FT300 force-torque sensor with mounting plate
+
+        Example use: 
+        ```
+            // Import this macro function
+            <xacro:include filename="$(find robotiq_ft_sensor)/urdf/robotiq_ft300.urdf.xacro" />
+            
+            // Instanciate sensor instance and connect it to robot flange
+            <xacro:robotiq_ft300 parent="robot_flange_link" prefix="">
+                <origin xyz="0 0 0" rpy="0 0 0"/> 
+            </xacro:robotiq_ft300>
+        ```
+    -->
+    <xacro:macro name="smc_gripper" params="parent prefix *origin">
+
+        <!-- mount smc_gripper to the robot -->
+        <joint name="${prefix}smc_gripper_fix" type="fixed">
+            <xacro:insert_block name="origin" />
+            <parent link="${parent}" />
+            <child link="${prefix}smc_gripper" />
+        </joint>
+
+       
+        <!-- Link representing smc_gripper -->
+        <link name="${prefix}smc_gripper">
+            <inertial>
+                <origin xyz="0 0 ${-17 / 1000}" rpy="0 0 0"/>
+                <mass value="0.300"/>
+                <inertia ixx="${262 / 1000000}" ixy="0" ixz="${1 / 1000000}" iyy="${265 / 1000000}" iyx="0" iyz="${1 / 1000000}" izz="${219 / 1000000}" izx="${-1 / 1000000}" izy="${1 / 1000000}"/>
+            </inertial>
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://ur_description/meshes/gripper/visual/smc_gripper.dae"/>
+                </geometry>
+                <material name="LightGrey">
+                    <color rgba="0.7 0.7 0.7 1.0"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="package://ur_description/meshes/gripper/collision/smc_gripper.stl"/>
+                </geometry>
+            </collision>
+        </link>
+	<!-- Joint between main gripper and gripper fingers -->
+	<link name="fingers_frame" />
+        <joint name="gripper_finger" type="fixed">
+    		<parent link="${prefix}smc_gripper" />
+    		<child link = "fingers_frame" />
+    		<origin xyz="0.0 -0.015 0.185" rpy="0.0 0.0 0.0" />
+  	</joint>
+	<!-- banana special girpper -->
+	<link name="bn_fingers_frame" />
+        <joint name="bn_gripper_finger" type="fixed">
+    		<parent link="fingers_frame" />
+    		<child link = "bn_fingers_frame" />
+    		<origin xyz="0.0 0.0 0.023" rpy="0.0 0.0 0.0" />
+  	</joint>
+	
+        
+
+    </xacro:macro>
+</robot>
