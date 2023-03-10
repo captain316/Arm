@@ -1,0 +1,3 @@
+1、cmd_vel_pub.cpp 接收/cmd_vel topic，并且通过udp向树莓派发布速度和角度信息，是正式发送的程序， 配合台式机的 recive_test/test.py接收使用
+2、test.cpp 是用来测试的，发布/cmd_vel话题
+3、test_send_cpp 是用来测试的,是cmd_vel_pub.cpp的测试版本

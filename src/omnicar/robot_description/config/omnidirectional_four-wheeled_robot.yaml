@@ -1,0 +1,50 @@
+omnidirectional_four_wheeled_robot:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers ---------------------------------------
+  FR_delta:
+    type: position_controllers/JointPositionController
+    joint: FRwheel_joint1
+    pid: {p: 10., i: 0.01, d: 1.}
+  FR_omega:
+    type: velocity_controllers/JointVelocityController
+    joint: FRwheel_joint3
+    pid: {p: 10., i: 0.01, d: 1.}
+  RR_delta:
+    type: position_controllers/JointPositionController
+    joint: BRwheel_joint1
+    pid: {p: 10., i: 0.01, d: 1.}
+  RR_omega:
+    type: velocity_controllers/JointVelocityController
+    joint: BRwheel_joint3
+    pid: {p: 10., i: 0.01, d: 1.}
+  FL_delta:
+    type: position_controllers/JointPositionController
+    joint: FLwheel_joint1
+    pid: {p: 10., i: 0.01, d: 1.}
+  FL_omega:
+    type: velocity_controllers/JointVelocityController
+    joint: FLwheel_joint3
+    pid: {p: 10., i: 0.01, d: 1.}
+  RL_delta:
+    type: position_controllers/JointPositionController
+    joint: BLwheel_joint1
+    pid: {p: 10., i: 0.01, d: 1.}
+  RL_omega:
+    type: velocity_controllers/JointVelocityController
+    joint: BLwheel_joint3
+    pid: {p: 10., i: 0.01, d: 1.}
+
+  # Gazebo ros Controllers ---------------------------------------
+  gazebo_ros_control/pid_gains:
+      FRwheel_joint1/p: 5.
+      FRwheel_joint3/p: 5.
+      BRwheel_joint1/p: 5.
+      BRwheel_joint3/p: 5.
+      FLwheel_joint1/p: 5.
+      FLwheel_joint3/p: 5.
+      BLwheel_joint1/p: 5.
+      BLwheel_joint3/p: 5.

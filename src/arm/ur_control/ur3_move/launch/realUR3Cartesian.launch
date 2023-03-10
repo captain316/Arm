@@ -1,0 +1,56 @@
+<?xml version='1.0' ?>
+<launch>
+    <arg name="debug" default="false" />
+    
+        <!-- Load robot_description to parameter server -->
+        <include file="$(find ur3_move)/launch/ur3_bringup.launch"/>
+        
+        <!-- Run the main MoveIt group (include planning_context etc...) -->
+        <include file="$(find my_ur3_moveit_config)/launch/move_group.launch">
+            <arg name="allow_trajectory_execution" value="true"/>
+            <arg name="fake_execution" value="false"/>
+            <arg name="info" value="true"/>
+            <arg name="debug" value="$(arg debug)"/>
+            <arg name="disable_capabilities" value="
+                        move_group/ClearOctomapService
+                        " />
+        </include>
+          
+          <!-- Given the published joint states, publish tf for the robot links -->
+        <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" /> -->
+
+        <!-- Load cartesian controller configuration -->
+        <!-- <rosparam file="$(find cartesian_ur_motion_demo)/config/ur_real_cartesian_controllers.yaml" command="load"></rosparam> -->
+
+        <!-- Spawn controllers -->
+        <!-- <node name="controller_spawner" pkg="controller_manager" type="spawner"
+                args=" stopped
+                
+                ur_motion_control_handle                
+                "
+        /> -->
+        <!-- Given the published joint states, publish tf for the robot links -->
+        <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" /> -->
+        
+        <!-- Load cartesian controller configuration -->
+        <rosparam file="$(find cartesian_ur_motion_demo)/config/ur_real_cartesian_controllers.yaml" command="load"></rosparam>
+
+        <!-- Spawn controllers -->
+        <node name="controller_spawner" pkg="controller_manager" type="spawner"
+                args="--stopped
+                ur_cartesian_motion_controller
+                ur_motion_control_handle                
+                "
+        />
+
+        <!-- static tf transform from world to base_link -->
+        <node name="static_transform_publisher" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 world base_link" />
+        <node name="static_transform_publisher_" pkg="tf2_ros" type="static_transform_publisher" args="-0.02563174 -0.05375485 -0.14551193 -0.04531701 0.03070749 -0.03897025 0.99773981 fingers_frame camera_link" />
+        
+        <!-- Run Rviz and load the default config to see the state of the move_group node -->
+        <include file="$(find my_ur3_moveit_config)/launch/moveit_rviz.launch" >
+            <arg name="rviz_config" value="$(find my_ur3_moveit_config)/launch/moveit.rviz"/>
+            <arg name="debug" value="$(arg debug)"/>
+        </include>
+  
+</launch>

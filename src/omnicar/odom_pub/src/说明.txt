@@ -1,0 +1,4 @@
+encode_pub.cpp 是用udp接收树莓派发出的各个编码器的数值，并发布/encoder_msg topic 需要配合台式机的 recive_test/test_pub_encode.py使用
+odom_pub.cpp 是用来接收/encoder_msg topic 并且转换成里程计，发布/odom topic
+test.cpp  发布了一个/encoder_msg topic， 早期用来测试的，已经没用了。
+recv_coding 用来接收树莓派发送的编码器数据
