@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/devel
+
+Name: cmd_vel_pub
+Description: Description of cmd_vel_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

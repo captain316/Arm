@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/devel
+
+Name: scan_pub
+Description: Description of scan_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

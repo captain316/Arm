@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/devel
+
+Name: cartesian_ur_motion_demo
+Description: Description of cartesian_ur_motion_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

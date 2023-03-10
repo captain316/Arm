@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/devel
+
+Name: laser_process
+Description: Description of laser_process
+Version: 0.0.0
+Cflags: -I/home/huo/Downloads/ur3_ws/src/omnicar/laser_process/include
+Libs: -L${prefix}/lib -llaser_process
+Requires: roscpp rospy sensor_msgs std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/install
+
+Name: odom_pub
+Description: Description of odom_pub
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lodom_pub
+Requires: geometry_msgs roscpp nav_msgs rospy tf message_runtime

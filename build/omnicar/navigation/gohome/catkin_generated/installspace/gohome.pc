@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/install
+
+Name: gohome
+Description: Description of gohome
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

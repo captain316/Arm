@@ -1,0 +1,8 @@
+prefix=/home/huo/Downloads/ur3_ws/devel
+
+Name: gohome
+Description: Description of gohome
+Version: 0.0.0
+Cflags: -I/home/huo/Downloads/ur3_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

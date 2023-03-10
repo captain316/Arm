@@ -1,0 +1,2 @@
+set(ur3_move_MESSAGE_FILES "")
+set(ur3_move_SERVICE_FILES "/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/AddTwoInts.srv;/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/getObjectPosition.srv;/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/mulObjectsPosition.srv;/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/varObjectsPosition.srv;/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/movingObjectPosition.srv;/home/huo/Downloads/ur3_ws/src/arm/ur_control/ur3_move/srv/Stop.srv")
