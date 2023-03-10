@@ -1,0 +1,4 @@
+bool flag
+---
+geometry_msgs/Pose[] targets_pose
+float64[] angles

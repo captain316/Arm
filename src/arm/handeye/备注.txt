@@ -1,0 +1,10 @@
+1、内参标定
+rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.035 image:=/camera/rgb/image_raw camera:=/camera/rgb 
+
+2、手眼标定
+先打开摄像头的launch
+再打开控制机械臂的launch（仿真是demo.launch,我在这个launch里添加了world到base_link的静态tf变换）
+最后打开ur3_xtion_calibration.launch
+然后打开rosrun rqt_gui rqt_gui，选菜单栏的plugins->visulization->image view,、topic选择/aruco_signal/result
+移动机械臂（先看看移动后tf能不能更新），保证相机都能看到码，然后采点，师兄采了30组好像，最后计算
+

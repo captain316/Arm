@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+        <!-- Load robot_description to parameter server -->
+        <include file="$(find ur_description)/launch/load_ur3.launch"/>
+
+        <!-- Load hardware configuration -->
+        <rosparam file="$(find cartesian_ur_motion_demo)/config/example_hw_config.yaml" command="load"></rosparam>
+
+        <!-- Load hardware interface -->
+        <node name="sim_hardware_interface" pkg="ros_control_boilerplate" type="sim_hw_main"
+        output="screen" />
+
+        <!-- Robot state publisher -->
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+                <param name="publish_frequency" type="double" value="50.0" />
+                <param name="tf_prefix" type="string" value="" />
+        </node>
+
+        <!-- Joint state publisher -->
+        <node name="joint_state_controller_spawner" pkg="controller_manager" type="spawner" args="joint_state_controller" respawn="false" output="screen"/>
+
+        <!-- Load controller configuration -->
+        <rosparam file="$(find cartesian_ur_motion_demo)/config/example_controllers.yaml" command="load"></rosparam>
+
+        <!-- Spawn controllers -->
+        <node name="controller_spawner" pkg="controller_manager" type="spawner"
+                args="
+                ur_cartesian_motion_controller
+                ur_motion_control_handle                
+                "
+        />
+        
+        <!-- static tf transform from world to base_link -->
+        <node name="static_transform_publisher" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 world base_link" />
+      
+        <!-- Visualization -->
+        <arg name="my_rviz" value="-d $(find cartesian_ur_motion_demo)/rviz/examples.rviz" />
+        <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="$(arg my_rviz)" output="screen" >
+        </node>
+</launch>

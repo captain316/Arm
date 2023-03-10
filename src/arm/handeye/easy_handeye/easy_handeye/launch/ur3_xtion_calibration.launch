@@ -1,0 +1,33 @@
+<?xml version='1.0' ?>
+<launch>
+    <arg name="namespace_prefix" default="ur3_xtion_handeyecalibration" />
+    <arg name="markerId" value="582" />
+    <arg name="markerSize" value="0.05" />
+
+    <!--  open aruco node -->
+    <node pkg="aruco_ros" type="single" name="aruco_single">
+        <remap from="/camera_info" to="/camera/rgb/camera_info" />
+        <remap from="/image" to="/camera/rgb/image_raw" />
+        <param name="image_is_rectigfied" value="True" />
+        <param name="marker_size" value="$(arg markerSize)" />
+        <param name="marker_id" value="$(arg markerId)" />
+        <param name="reference_frame" value="xtion_camera" />
+        <param name="camera_frame" value="xtion_camera" />
+        <param name="marker_frame" value="camera_marker" />
+    </node>
+
+    <!-- start easy_handeye -->
+    <include file="$(find easy_handeye)/launch/calibrate.launch" >
+        <arg name="namespace_prefix" value="$(arg namespace_prefix)" />
+        <arg name="eye_on_hand" value="true" />
+        <arg name="move_group" value="ur_arm" />
+        <arg name="tracking_base_frame" value="xtion_camera" />
+        <arg name="tracking_marker_frame" value="camera_marker" />
+        <arg name="robot_base_frame" value="base_link" />
+        <arg name="robot_effector_frame" value="fingers_frame" />
+
+        <arg name="freehand_robot_movement" value="true" /> <!-- false: auto choose pose -->
+        <arg name="robot_velocity_scaling" value="0.5" />
+        <arg name="robot_acceleration_scaling" value="0.2" />
+    </include>>
+</launch>

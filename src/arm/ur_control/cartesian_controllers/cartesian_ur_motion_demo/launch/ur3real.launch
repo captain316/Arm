@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+        <!-- Load robot_description to parameter server -->
+        <!-- <include file="$(find cartesian_ur_motion_demo)/launch/ur3_bringup.launch"/> -->
+
+        <!-- Load hardware configuration -->
+        <rosparam file="$(find cartesian_ur_motion_demo)/config/example_hw_config.yaml" command="load"></rosparam>
+
+        <!-- Load controller configuration -->
+        <rosparam file="$(find cartesian_ur_motion_demo)/config/example_controllers.yaml" command="load"></rosparam>
+
+        <!-- Spawn controllers -->
+        <node name="controller_spawner" pkg="controller_manager" type="spawner"
+                args="--stopped
+                ur_cartesian_motion_controller
+                ur_motion_control_handle                
+                "
+        />
+        
+        <!-- static tf transform from world to base_link -->
+        <!-- <node name="static_transform_publisher" pkg="tf2_ros" type="static_transform_publisher" args="0 0 0 0 0 0 world base_link" /> -->
+        
+        <!-- Visualization -->
+        <!-- <arg name="my_rviz" value="-d $(find cartesian_ur_motion_demo)/rviz/examples.rviz" />
+        <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="$(arg my_rviz)" output="screen" >
+        </node> -->
+</launch>
