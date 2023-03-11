@@ -279,7 +279,7 @@ void cartesianPlanning(moveit::planning_interface::MoveGroupInterface& arm,
     target_posestamp.header.stamp = ros::Time::now();
     pose_pub_.publish(target_posestamp);
     sleep(2);
-    erz = -0.05;
+    erz = -0.03; //第一次夹物体的高度
     while(timecount < 100 && ros::ok()) {
         fake_pose.position.z +=  erz / 10; 
         target_posestamp.pose = fake_pose;
@@ -344,7 +344,7 @@ void cartesianPlanningNext(moveit::planning_interface::MoveGroupInterface& arm,
     target_posestamp.header.stamp = ros::Time::now();
     pose_pub_.publish(target_posestamp);
     sleep(2);
-    erz = -0.08;
+    erz = -0.06; //第二次夹物体的高度
     while(timecount < 120 && ros::ok()) {
         fake_pose.position.z +=  erz / 30; 
         target_posestamp.pose = fake_pose;

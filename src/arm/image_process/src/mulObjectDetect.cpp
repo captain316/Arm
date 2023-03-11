@@ -312,7 +312,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     cv::Mat imgray;
     
     //去除光照
-    normalizeRGB1(image, dst);
+    normalizeRGB(image, dst);
     // cv::imshow("去光照", dst);
     
     cv::cvtColor(dst, imgray, cv::COLOR_BGR2GRAY);
@@ -553,7 +553,7 @@ int main(int argc, char **argv)
     signal(SIGINT, signalHandle);
     auto start = std::chrono::steady_clock::now();
 
-    detector = new NanoDet("/home/huo/Downloads/ur3_ws/src/arm/image_process/model/nanodet-plus-m_320.xml");
+    detector = new NanoDet("/home/huo/Downloads/ur3_ws/src/arm/image_process/model/nanodet_m.xml");
 
     auto end = std::chrono::steady_clock::now();
     auto time = std::chrono::duration<double>(end - start).count();

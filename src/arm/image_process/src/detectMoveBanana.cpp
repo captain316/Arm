@@ -8,7 +8,6 @@
 #include "opencv2/opencv.hpp"
 #include <algorithm>
 #include <chrono>
-
 #include "nanodet_openvino.h"
 #include <string>
 #include <iostream>
@@ -353,13 +352,13 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
 {
     cv::Mat dst(image.size(), CV_32FC3);
     cv::Mat imgray;
-    
+    //  cv::imshow("去光照", image);
     //去除光照
-    normalizeRGB1(image, dst);
-    cv::imshow("去光照", dst);
+    normalizeRGB(image, dst);
+    // cv::imshow("去光照", dst);
     
     cv::cvtColor(dst, imgray, cv::COLOR_BGR2GRAY);
-    cv::imshow("去光照后的灰度图像", imgray);
+    // cv::imshow("去光照后的灰度图像", imgray);
     cv::GaussianBlur(imgray, imgray, cv::Size(3, 3), 0.5, 0.5);
     // cv::imshow("平滑灰度图像", imgray);
     
@@ -441,7 +440,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     // cv::adaptiveThreshold(imgray, imgray, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 3, 10);
 
     cv::imshow("去光照后的二值图像", imgray);
-    cv::imshow("种类", image);
+    // cv::imshow("种类", image);
     std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Vec4i> hierarchy;
     
@@ -549,9 +548,10 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     cv::waitKey(1);
 }
 
+
 void receive_msg_call_back(const boost::shared_ptr<sensor_msgs::Image const>& msg, NanoDet& detector, tf::TransformListener& listener)
 {   
-    
+    auto result_start = std::chrono::steady_clock::now();
     int min_width = 320;
 	int min_height = 320;
     cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::TYPE_8UC3);
@@ -560,18 +560,21 @@ void receive_msg_call_back(const boost::shared_ptr<sensor_msgs::Image const>& ms
     // cv::Mat img_ = cv::Mat(cv::Size(320, 320), CV_8UC3);
     // cv::Mat img_;
     cv::cvtColor(img_, img_, cv::COLOR_RGB2BGR);
+    // cv::imshow("原图", img_);
     object_rect effect_roi;
     cv::Mat resized_img;
     // cv::resize(img_,img_,cv::Size(min_width, min_height));
     resize_uniform(img_, resized_img, cv::Size(320, 320), effect_roi);
-    auto result_start = std::chrono::steady_clock::now();
+   
     auto results = detector.detect(resized_img, 0.25, 0.5);
-    auto result_end = std::chrono::steady_clock::now();
-    auto result_time = std::chrono::duration<double, std::milli>(result_end - result_start).count();
+    // cv::waitKey(1);
     // std::cout << "detect time = " << result_time << std::endl;
     // std::cout << "results size = " << results.size() << std::endl;
     // std::cout << img_ << std::endl;
+    
     draw_bboxes(img_, results, effect_roi, listener);
+    
+    
     if (tf_publish) {
         // 设置真实香蕉的tf
         realBananaTF.setOrigin( tf::Vector3(objectPose.position.x, objectPose.position.y, objectPose.position.z) ); 
@@ -593,9 +596,14 @@ void receive_msg_call_back(const boost::shared_ptr<sensor_msgs::Image const>& ms
         
 
     }
+    auto result_end = std::chrono::steady_clock::now();
+    auto result_time = std::chrono::duration<double, std::milli>(result_end - result_start).count();
+    std::cout << "detect time = " << result_time << std::endl;
     sensor_msgs::ImagePtr image = cv_bridge::CvImage(std_msgs::Header(), "bgr8", img_).toImageMsg();
     process_image.publish(*image);
 }
+
+
 
 
 
@@ -608,20 +616,20 @@ int main(int argc, char **argv)
     trackBanana = new tf::TransformBroadcaster;
     signal(SIGINT, signalHandle);
     auto start = std::chrono::steady_clock::now();
-
     auto detector = NanoDet("/home/huo/Downloads/ur3_ws/src/arm/image_process/model/nanodet_m.xml");
-                         
+    // auto detector = NanoDet("/home/huo/Downloads/ur3_ws/src/arm/image_process/model/nanodet_m.xml");
+
     auto end = std::chrono::steady_clock::now();
     auto time = std::chrono::duration<double>(end - start).count();
     std::cout << "*** load model's time(s):\t" << time << std::endl; 
      
     process_image = n.advertise<sensor_msgs::Image>("image", 500);  //发布image的话题
     
-    worldPosition = n.advertise<geometry_msgs::Pose>("worldPose", 500);  //发布worldPose的话题
+    worldPosition = n.advertise<geometry_msgs::Pose>("worldPose", 500);  //发布worldPose的话题  boost::ref(detector)
     boost::function<void(const boost::shared_ptr<sensor_msgs::Image const>&)> callback = boost::bind(receive_msg_call_back, _1, boost::ref(detector), boost::ref(listener));
     
     original_image = n.subscribe("/camera/rgb/image_raw", 500, callback);    //订阅原图像话题，/camera/rgb/image_raw
-    
+    // original_image = n.subscribe("/camera/rgb/image_raw", 500, receive_msg_call_back);
     ros::ServiceServer service = n.advertiseService("getObjectPose", responsePose);
 
     ROS_INFO("ready!");
