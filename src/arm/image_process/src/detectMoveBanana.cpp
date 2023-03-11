@@ -6,6 +6,8 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 #include "opencv2/opencv.hpp"
+#include <algorithm>
+#include <chrono>
 
 #include "nanodet_openvino.h"
 #include <string>
@@ -607,8 +609,8 @@ int main(int argc, char **argv)
     signal(SIGINT, signalHandle);
     auto start = std::chrono::steady_clock::now();
 
-    auto detector = NanoDet("/home/sr/catkin_ws/src/arm/image_process/model/nanodet_m.xml");
-
+    auto detector = NanoDet("/home/huo/Downloads/ur3_ws/src/arm/image_process/model/nanodet_m.xml");
+                         
     auto end = std::chrono::steady_clock::now();
     auto time = std::chrono::duration<double>(end - start).count();
     std::cout << "*** load model's time(s):\t" << time << std::endl; 

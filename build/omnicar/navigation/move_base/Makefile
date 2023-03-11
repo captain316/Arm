@@ -172,76 +172,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-.PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_cpp: omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
-.PHONY : move_base_msgs_generate_messages_cpp
-
-# fast build rule for target.
-move_base_msgs_generate_messages_cpp/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
-.PHONY : move_base_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
-.PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_eus: omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
-.PHONY : move_base_msgs_generate_messages_eus
-
-# fast build rule for target.
-move_base_msgs_generate_messages_eus/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
-.PHONY : move_base_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-.PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_lisp: omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
-.PHONY : move_base_msgs_generate_messages_lisp
-
-# fast build rule for target.
-move_base_msgs_generate_messages_lisp/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
-.PHONY : move_base_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-.PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_nodejs: omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
-.PHONY : move_base_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-move_base_msgs_generate_messages_nodejs/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
-.PHONY : move_base_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-.PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-move_base_msgs_generate_messages_py: omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
-.PHONY : move_base_msgs_generate_messages_py
-
-# fast build rule for target.
-move_base_msgs_generate_messages_py/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make omnicar/navigation/move_base/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
-.PHONY : move_base_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 omnicar/navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule:
 	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 omnicar/navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule
 .PHONY : omnicar/navigation/move_base/CMakeFiles/move_base_gencfg.dir/rule
@@ -345,11 +275,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... move_base_gencfg"
-	@echo "... move_base_msgs_generate_messages_cpp"
-	@echo "... move_base_msgs_generate_messages_eus"
-	@echo "... move_base_msgs_generate_messages_lisp"
-	@echo "... move_base_msgs_generate_messages_nodejs"
-	@echo "... move_base_msgs_generate_messages_py"
 	@echo "... move_base"
 	@echo "... move_base_node"
 	@echo "... src/move_base.o"

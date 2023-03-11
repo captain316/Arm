@@ -172,20 +172,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build.make arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
 arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/huo/Downloads/ur3_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : arm/handeye/aruco_ros/aruco_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -522,7 +508,6 @@ help:
 	@echo "... test"
 	@echo "... _aruco_msgs_generate_messages_check_deps_Marker"
 	@echo "... _aruco_msgs_generate_messages_check_deps_MarkerArray"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... aruco_msgs_gencpp"
 	@echo "... aruco_msgs_generate_messages"
 	@echo "... aruco_msgs_generate_messages_cpp"

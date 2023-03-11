@@ -1,0 +1,8 @@
+# CMake generated Testfile for 
+# Source directory: /home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_tests
+# Build directory: /home/huo/Downloads/ur3_ws/build/arm/ur_control/cartesian_controllers/cartesian_controller_tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_cartesian_controller_tests_rostest_cartesian_controllers.test "/home/huo/Downloads/ur3_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python2" "/opt/ros/melodic/share/catkin/cmake/test/run_tests.py" "/home/huo/Downloads/ur3_ws/build/test_results/cartesian_controller_tests/rostest-cartesian_controllers.xml" "--return-code" "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_tests --package=cartesian_controller_tests --results-filename cartesian_controllers.xml --results-base-dir \"/home/huo/Downloads/ur3_ws/build/test_results\" /home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_tests/cartesian_controllers.test ")
+set_tests_properties(_ctest_cartesian_controller_tests_rostest_cartesian_controllers.test PROPERTIES  _BACKTRACE_TRIPLES "/opt/ros/melodic/share/catkin/cmake/test/tests.cmake;160;add_test;/opt/ros/melodic/share/rostest/cmake/rostest-extras.cmake;52;catkin_run_tests_target;/home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_tests/CMakeLists.txt;20;add_rostest;/home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_tests/CMakeLists.txt;0;")

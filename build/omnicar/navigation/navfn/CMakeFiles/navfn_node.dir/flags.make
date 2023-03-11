@@ -6,5 +6,5 @@ CXX_DEFINES = -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/devel/include -I/home/huo/Downloads/ur3_ws/src/omnicar/navigation/navfn/include -I/home/huo/Downloads/ur3_ws/src/omnicar/navigation/costmap_2d/include -I/home/huo/Downloads/ur3_ws/src/omnicar/navigation/voxel_grid/include -I/home/huo/Downloads/ur3_ws/src/omnicar/navigation/nav_core/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/local/include/eigen3 -I/usr/include/eigen3
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=c++11
 

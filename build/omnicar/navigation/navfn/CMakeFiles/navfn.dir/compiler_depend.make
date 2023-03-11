@@ -385,7 +385,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn.cpp.o: /home/huo/Downloa
   /usr/include/c++/7/array \
   /usr/include/c++/7/bits/uses_allocator.h \
   /usr/include/c++/7/bits/invoke.h \
-  /usr/include/c++/7/bits/quoted_string.h \
   /usr/include/c++/7/cstring \
   /usr/include/boost/config/no_tr1/complex.hpp \
   /usr/include/c++/7/complex \
@@ -731,7 +730,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn.cpp.o: /home/huo/Downloa
   /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
   /usr/include/boost/detail/endian.hpp \
   /usr/include/boost/predef/detail/endian_compat.h \
-  /usr/lib/gcc/x86_64-linux-gnu/7/include/quadmath.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/c++/7/cstdarg \
   /usr/include/c++/7/map \
@@ -1129,14 +1127,13 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
   /usr/include/c++/7/array \
   /usr/include/c++/7/bits/uses_allocator.h \
   /usr/include/c++/7/bits/invoke.h \
-  /usr/include/c++/7/bits/quoted_string.h \
-  /usr/include/c++/7/sstream \
-  /usr/include/c++/7/bits/sstream.tcc \
   /usr/include/c++/7/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/boost/config/no_tr1/complex.hpp \
   /usr/include/c++/7/complex \
+  /usr/include/c++/7/sstream \
+  /usr/include/c++/7/bits/sstream.tcc \
   /usr/include/boost/math/policies/policy.hpp \
   /usr/include/boost/mpl/list.hpp \
   /usr/include/boost/mpl/limits/list.hpp \
@@ -1479,7 +1476,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
   /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
   /usr/include/boost/detail/endian.hpp \
   /usr/include/boost/predef/detail/endian_compat.h \
-  /usr/lib/gcc/x86_64-linux-gnu/7/include/quadmath.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /opt/ros/melodic/include/ros/rate.h \
   /opt/ros/melodic/include/ros/console.h \
@@ -2151,7 +2147,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
   /usr/include/boost/variant/apply_visitor.hpp \
   /usr/include/boost/variant/detail/apply_visitor_unary.hpp \
   /usr/include/boost/variant/detail/generic_result_type.hpp \
-  /usr/include/boost/variant/detail/has_result_type.hpp \
   /usr/include/boost/variant/detail/apply_visitor_binary.hpp \
   /usr/include/boost/variant/detail/apply_visitor_delayed.hpp \
   /usr/include/boost/variant/variant_fwd.hpp \
@@ -2159,6 +2154,7 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
   /usr/include/boost/blank_fwd.hpp \
   /usr/include/boost/preprocessor/enum_shifted_params.hpp \
   /usr/include/boost/variant/detail/substitute_fwd.hpp \
+  /usr/include/boost/variant/detail/has_result_type.hpp \
   /usr/include/boost/variant/variant.hpp \
   /usr/include/boost/variant/detail/backup_holder.hpp \
   /usr/include/boost/variant/detail/enable_recursive_fwd.hpp \
@@ -2675,6 +2671,8 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 
 /usr/include/boost/parameter/macros.hpp:
 
+/usr/include/boost/parameter/value_type.hpp:
+
 /usr/include/boost/parameter/aux_/overloads.hpp:
 
 /usr/include/boost/mpl/aux_/has_key_impl.hpp:
@@ -2698,10 +2696,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/mpl/set/aux_/size_impl.hpp:
 
 /usr/include/boost/mpl/set/aux_/set0.hpp:
-
-/usr/include/boost/mpl/set/aux_/clear_impl.hpp:
-
-/usr/include/boost/mpl/aux_/config/operators.hpp:
 
 /usr/include/boost/limits.hpp:
 
@@ -2861,6 +2855,10 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 
 /usr/include/boost/mpl/assert.hpp:
 
+/usr/include/boost/mpl/arg.hpp:
+
+/usr/include/boost/mpl/begin_end_fwd.hpp:
+
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
 /usr/include/boost/filesystem/fstream.hpp:
@@ -2959,17 +2957,17 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 
 /home/huo/Downloads/ur3_ws/src/omnicar/navigation/nav_core/include/nav_core/base_global_planner.h:
 
+/usr/include/boost/type_traits/is_void.hpp:
+
 /usr/include/boost/mpl/iterator_tags.hpp:
+
+/usr/include/boost/mpl/list/aux_/iterator.hpp:
 
 /usr/include/boost/algorithm/string/case_conv.hpp:
 
 /usr/include/boost/move/detail/config_end.hpp:
 
 /usr/include/boost/signals2/deconstruct_ptr.hpp:
-
-/usr/include/boost/mpl/begin_end_fwd.hpp:
-
-/usr/include/boost/mpl/arg.hpp:
 
 /usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
@@ -3042,10 +3040,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/usr/include/boost/parameter/value_type.hpp:
-
-/usr/include/c++/7/bits/quoted_string.h:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
 
@@ -4601,8 +4595,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 
 /usr/include/boost/predef/hardware.h:
 
-/usr/include/boost/type_traits/is_void.hpp:
-
 /usr/include/boost/type_traits/add_lvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_reference.hpp:
@@ -4656,14 +4648,6 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/detail/endian.hpp:
 
 /usr/include/boost/predef/detail/endian_compat.h:
-
-/usr/include/boost/mpl/list/aux_/iterator.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/quadmath.h:
-
-/usr/include/boost/predef/compiler.h:
-
-/usr/include/boost/type_traits/conversion_traits.hpp:
 
 /opt/ros/melodic/include/class_loader/register_macro.hpp:
 
@@ -4802,6 +4786,8 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
 
 /usr/include/boost/move/detail/meta_utils.hpp:
+
+/usr/include/boost/mpl/aux_/config/operators.hpp:
 
 /usr/include/boost/bind/bind_mf2_cc.hpp:
 
@@ -5110,6 +5096,10 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/range/concepts.hpp:
 
 /usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/include/boost/predef/compiler.h:
+
+/usr/include/boost/type_traits/conversion_traits.hpp:
 
 /usr/include/boost/concept/detail/concept_def.hpp:
 
@@ -5840,3 +5830,5 @@ omnicar/navigation/navfn/CMakeFiles/navfn.dir/src/navfn_ros.cpp.o: /home/huo/Dow
 /usr/include/boost/core/swap.hpp:
 
 /usr/include/boost/mpl/aux_/overload_names.hpp:
+
+/usr/include/boost/mpl/set/aux_/clear_impl.hpp:
