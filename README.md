@@ -13,6 +13,14 @@ arm
 	roslaunch openni2_launch openni2.launch
 ```
 请确保摄像头设备已接入，当看到`Device "1d27/6601@1/8" found.`时，打开另一个终端输入`rviz`，在rviz界面中左下角依次点击：
-```xml
+```xmls
 add -> By topic -> /rgb -> /image_raw -> Image
+```
+
+3.追踪banana
+```xml
+	roslaunch openni2_launch openni2.launch	
+	roslaunch ur3_move realUR3Cartesian.launch
+	rosrun image_process detectMoveBanana
+	rosrun ur3_move trackBanana
 ```
