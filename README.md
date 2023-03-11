@@ -17,7 +17,7 @@ arm
 add -> By topic -> /rgb -> /image_raw -> Image
 ```
 
-3.追踪banana
+3. 追踪banana
 ```xml
 	roslaunch openni2_launch openni2.launch	
 	roslaunch ur3_move realUR3Cartesian.launch
