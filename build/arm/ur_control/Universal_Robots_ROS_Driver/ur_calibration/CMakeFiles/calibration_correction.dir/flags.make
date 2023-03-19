@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/arm/ur_control/Universal_Robots_ROS_Driver/ur_calibration/include -I/home/huo/Downloads/ur3_ws/devel/include -I/home/huo/Downloads/ur3_ws/src/arm/ur_control/Universal_Robots_ROS_Driver/ur_robot_driver/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/local/include/eigen3 -isystem /opt/ros/melodic/include
 
-CXX_FLAGS = -std=c++11 -std=c++17
+CXX_FLAGS = -O2 -g -DNDEBUG -std=c++11 -std=c++17
 

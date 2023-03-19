@@ -79,7 +79,8 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "*.txx": "cpp"
     },
     "python.analysis.extraPaths": [
         "/home/huo/Downloads/ur3_ws/devel/lib/python2.7/dist-packages",

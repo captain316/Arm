@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/usr/include/vtk-6.3 -I/usr/include/freetype2 -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/include/python2.7 -I/usr/include/hdf5/openmpi -I/usr/include/libxml2 -I/usr/include/jsoncpp -I/usr/include/tcl -I/home/huo/Downloads/ur3_ws/src/omnicar/scan_tools/laser_scan_matcher/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.8 -I/usr/include/ni -I/usr/include/openni2 -I/usr/local/include/eigen3/eigen3
 
-CXX_FLAGS = -fPIC -std=c++11
+CXX_FLAGS = -O2 -g -DNDEBUG -fPIC -std=c++11
 

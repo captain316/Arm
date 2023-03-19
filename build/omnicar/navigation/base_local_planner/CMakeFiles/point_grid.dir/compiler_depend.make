@@ -80,6 +80,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/7/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -138,10 +139,13 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/7/bits/std_abs.h \
   /usr/include/c++/7/cstdio \
   /usr/include/stdio.h \
@@ -149,6 +153,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/x86_64-linux-gnu/bits/_G_config.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/7/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -216,6 +222,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /opt/ros/melodic/include/ros/exception.h \
   /opt/ros/melodic/include/ros/duration.h \
   /usr/include/c++/7/math.h \
@@ -245,6 +252,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -407,6 +415,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
   /usr/include/c++/7/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/boost/config/no_tr1/complex.hpp \
   /usr/include/c++/7/complex \
   /usr/include/c++/7/sstream \
@@ -1346,8 +1356,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/type_traits/composite_traits.hpp:
 
-/usr/include/boost/type_traits/is_constructible.hpp:
-
 /opt/ros/melodic/include/ros/subscriber.h:
 
 /usr/include/boost/type_index/type_index_facade.hpp:
@@ -1566,21 +1574,29 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/math/tools/precision.hpp:
 
-/usr/include/boost/predef/os/android.h:
+/opt/ros/melodic/include/ros/single_subscriber_publisher.h:
 
-/usr/include/c++/7/bits/alloc_traits.h:
+/usr/include/log4cxx/helpers/objectimpl.h:
 
-/usr/include/boost/predef/library/std/vacpp.h:
+/usr/include/boost/assert.hpp:
 
-/usr/include/boost/mpl/aux_/fold_impl.hpp:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+/usr/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/predef/library/std/stlport.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
 
-/opt/ros/melodic/include/ros/rate.h:
+/usr/include/boost/mpl/less_equal.hpp:
 
-/usr/include/boost/mpl/aux_/advance_backward.hpp:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
+
+/usr/include/boost/mpl/greater.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
+
+/usr/include/boost/smart_ptr/weak_ptr.hpp:
+
+/usr/include/boost/mpl/not_equal_to.hpp:
 
 /usr/include/boost/predef/library/std/msl.h:
 
@@ -1603,8 +1619,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/predef/library/std/cxx.h:
 
 /usr/include/x86_64-linux-gnu/bits/_G_config.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
 
 /usr/include/boost/predef/library/std/_prefix.h:
 
@@ -1657,8 +1671,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/predef/compiler/hp_acc.h:
 
 /home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/include/base_local_planner/point_grid.h:
-
-/usr/include/boost/predef/os/beos.h:
 
 /usr/include/boost/predef/library/c/gnu.h:
 
@@ -1718,10 +1730,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/boost/mpl/negate.hpp:
-
 /usr/include/boost/predef/compiler/compaq.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
@@ -1747,8 +1755,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /opt/ros/melodic/include/ros/transport_hints.h:
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
-
-/usr/include/boost/predef/library/c/_prefix.h:
 
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
@@ -1832,14 +1838,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
-/usr/include/boost/predef/os/aix.h:
-
-/usr/include/stdint.h:
-
-/usr/include/boost/predef/architecture/mips.h:
-
-/usr/include/c++/7/bits/stl_relops.h:
-
 /usr/include/c++/7/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
@@ -1885,6 +1883,42 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/preprocessor/iteration/iterate.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
+
+/usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
+
+/usr/include/c++/7/ostream:
+
+/usr/include/c++/7/math.h:
+
+/usr/include/c++/7/array:
+
+/usr/include/boost/predef/architecture/arm.h:
+
+/usr/include/c++/7/tuple:
+
+/usr/include/x86_64-linux-gnu/bits/libio.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
+
+/usr/include/boost/type_traits/is_fundamental.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/boost/mpl/aux_/arg_typedef.hpp:
+
+/usr/include/boost/config/user.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
+
+/usr/include/boost/predef/architecture/mips.h:
+
+/usr/include/c++/7/bits/stl_relops.h:
+
+/usr/include/stdint.h:
+
+/usr/include/boost/predef/os/aix.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -1938,16 +1972,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/boost/predef/compiler/llvm.h:
-
-/usr/include/boost/predef.h:
-
-/usr/include/boost/range/const_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
-
 /opt/ros/melodic/include/ros/platform.h:
 
 /usr/include/boost/numeric/conversion/bounds.hpp:
@@ -1966,17 +1990,11 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/vector/vector0.hpp:
 
-/usr/include/c++/7/bits/basic_ios.tcc:
+/usr/include/boost/predef/library/std/stlport.h:
 
-/usr/include/boost/config.hpp:
+/opt/ros/melodic/include/ros/rate.h:
 
-/usr/include/boost/mpl/at.hpp:
-
-/usr/include/boost/preprocessor/control/deduce_d.hpp:
-
-/usr/include/boost/type_traits/detail/config.hpp:
-
-/usr/include/c++/7/bits/shared_ptr.h:
+/usr/include/boost/mpl/aux_/advance_backward.hpp:
 
 /usr/include/log4cxx/logstring.h:
 
@@ -1997,6 +2015,14 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/7/utility:
+
+/usr/include/c++/7/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/7/string:
 
 /usr/include/boost/type_traits/add_const.hpp:
 
@@ -2021,6 +2047,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/boost/predef/library/c/_prefix.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/math.h:
 
@@ -2092,8 +2122,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/c++/7/bits/stl_uninitialized.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp:
-
 /usr/include/boost/mpl/void.hpp:
 
 /usr/include/c++/7/bits/stl_function.h:
@@ -2104,10 +2132,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/vector/aux_/back.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/c++/7/bits/stl_bvector.h:
-
 /usr/include/boost/bind/bind_cc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -2115,6 +2139,22 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/c++/7/bits/move.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/include/c++/7/bits/basic_ios.tcc:
+
+/usr/include/boost/config.hpp:
+
+/usr/include/boost/mpl/at.hpp:
+
+/usr/include/boost/preprocessor/control/deduce_d.hpp:
+
+/usr/include/boost/type_traits/detail/config.hpp:
+
+/usr/include/c++/7/bits/shared_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/src/point_grid_node.cpp:
 
 /usr/include/c++/7/bits/concept_check.h:
 
@@ -2131,6 +2171,16 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/mpl/back_inserter.hpp:
 
 /usr/include/c++/7/bits/stl_construct.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/boost/mpl/negate.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/boost/mpl/aux_/na.hpp:
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
@@ -2188,21 +2238,11 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/c++/7/bits/exception.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/boost/version.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
-
-/usr/include/c++/7/ostream:
-
-/usr/include/c++/7/math.h:
-
-/usr/include/c++/7/array:
-
-/usr/include/boost/predef/architecture/arm.h:
 
 /usr/include/boost/math/special_functions/round.hpp:
 
@@ -2226,19 +2266,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/libio.h:
-
-/usr/include/c++/7/tuple:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
-
-/usr/include/boost/type_traits/is_fundamental.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/boost/mpl/aux_/arg_typedef.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
+/usr/include/stdio.h:
 
 /usr/include/boost/preprocessor/repetition/detail/for.hpp:
 
@@ -2256,9 +2284,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/boost/config/user.hpp:
+/usr/include/c++/7/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
+/usr/include/boost/predef/os/android.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -2280,8 +2308,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/c++/7/bits/locale_facets.h:
 
-/usr/include/boost/predef/compiler/gcc_xml.h:
-
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
 /opt/ros/melodic/include/sensor_msgs/impl/point_cloud2_iterator.h:
@@ -2300,8 +2326,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/c++/7/backward/binders.h:
 
-/usr/include/c++/7/utility:
-
 /usr/include/boost/range/distance.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -2319,6 +2343,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/predef/os/qnxnto.h:
 
 /usr/include/boost/mpl/always.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/7/cmath:
 
@@ -2346,6 +2372,14 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/find_if_pred.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
+/usr/include/boost/mpl/aux_/config/arrays.hpp:
+
+/usr/include/boost/mpl/bind.hpp:
+
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
@@ -2364,13 +2398,13 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
-/usr/include/c++/7/string:
-
 /usr/include/boost/predef/detail/_cassert.h:
 
 /usr/include/boost/predef/architecture/m68k.h:
 
-/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/src/point_grid_node.cpp:
+/usr/include/boost/type_traits/is_constructible.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -2381,6 +2415,24 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/boost/mpl/identity.hpp:
+
+/usr/include/boost/predef/compiler/llvm.h:
+
+/usr/include/boost/predef.h:
+
+/usr/include/boost/range/const_iterator.hpp:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
+
+/usr/include/boost/mpl/list/aux_/tag.hpp:
+
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/c++/7/istream:
 
@@ -2408,6 +2460,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/predef/platform/windows_runtime.h:
 
+/usr/include/c++/7/cerrno:
+
+/usr/include/c++/7/bits/uses_allocator.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/boost/predef/compiler/visualc.h:
@@ -2423,14 +2479,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/c++/7/bits/basic_string.tcc:
 
 /usr/include/boost/config/no_tr1/complex.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
-
-/usr/include/boost/predef/os/bsd.h:
-
-/usr/include/boost/range/detail/extract_optional_type.hpp:
-
-/usr/include/boost/predef/os/macos.h:
 
 /usr/include/c++/7/bits/stream_iterator.h:
 
@@ -2456,23 +2504,19 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/boost/predef/os.h:
-
-/usr/include/boost/predef/os/irix.h:
-
-/usr/include/boost/type_traits/is_union.hpp:
-
-/usr/include/boost/mpl/aux_/has_tag.hpp:
-
-/usr/include/stdio.h:
-
 /usr/include/boost/get_pointer.hpp:
 
 /usr/include/features.h:
 
 /usr/include/boost/preprocessor/control/while.hpp:
+
+/usr/include/boost/predef/compiler/gcc_xml.h:
+
+/usr/include/boost/predef/detail/comp_detected.h:
+
+/usr/include/boost/mpl/vector/vector20.hpp:
+
+/usr/include/c++/7/bits/istream.tcc:
 
 /usr/include/boost/predef/compiler/metaware.h:
 
@@ -2502,8 +2546,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/boost/mpl/greater.hpp:
-
 /opt/ros/melodic/include/ros/message_forward.h:
 
 /usr/include/c++/7/bits/atomic_lockfree_defines.h:
@@ -2518,12 +2560,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
 
-/usr/include/boost/predef/detail/comp_detected.h:
-
-/usr/include/boost/mpl/vector/vector20.hpp:
-
-/usr/include/c++/7/bits/istream.tcc:
-
 /usr/include/c++/7/bits/list.tcc:
 
 /usr/include/asm-generic/errno-base.h:
@@ -2535,12 +2571,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/c++/7/memory:
 
 /usr/include/c++/7/bits/stl_algo.h:
-
-/usr/include/boost/predef/os/amigaos.h:
-
-/usr/include/boost/predef/architecture/rs6k.h:
-
-/usr/include/boost/mpl/vector/aux_/push_front.hpp:
 
 /usr/include/boost/predef/architecture/parisc.h:
 
@@ -2558,9 +2588,39 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/c++/7/bits/codecvt.h:
 
-/usr/include/c++/7/cerrno:
+/usr/include/boost/predef/library/std/vacpp.h:
 
-/usr/include/c++/7/bits/uses_allocator.h:
+/usr/include/boost/mpl/aux_/fold_impl.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/boost/predef/os.h:
+
+/usr/include/boost/predef/os/irix.h:
+
+/usr/include/boost/type_traits/is_union.hpp:
+
+/usr/include/boost/mpl/aux_/has_tag.hpp:
+
+/usr/include/boost/predef/os/amigaos.h:
+
+/usr/include/boost/predef/architecture/rs6k.h:
+
+/usr/include/boost/mpl/vector/aux_/push_front.hpp:
+
+/usr/include/boost/predef/os/beos.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/include/boost/predef/os/bsd.h:
+
+/usr/include/boost/range/detail/extract_optional_type.hpp:
+
+/usr/include/boost/predef/os/macos.h:
 
 /usr/include/strings.h:
 
@@ -2628,12 +2688,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
 
-/opt/ros/melodic/include/ros/single_subscriber_publisher.h:
-
-/usr/include/log4cxx/helpers/objectimpl.h:
-
-/usr/include/boost/assert.hpp:
-
 /usr/include/boost/predef/hardware/simd/ppc.h:
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
@@ -2692,8 +2746,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/math/policies/error_handling.hpp:
 
-/usr/include/boost/mpl/greater_equal.hpp:
-
 /usr/include/c++/7/iomanip:
 
 /usr/include/c++/7/bits/locale_facets_nonio.h:
@@ -2735,8 +2787,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/mpl/list.hpp:
 
 /usr/include/boost/mpl/limits/list.hpp:
-
-/usr/include/boost/mpl/aux_/na.hpp:
 
 /usr/include/boost/mpl/at_fwd.hpp:
 
@@ -2830,6 +2880,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/list/aux_/push_front.hpp:
 
+/usr/include/boost/static_assert.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
+
 /usr/include/c++/7/cwctype:
 
 /usr/include/boost/mpl/next_prior.hpp:
@@ -2874,10 +2928,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/aux_/preprocessor/params.hpp:
 
-/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
-
-/usr/include/boost/static_assert.hpp:
-
 /usr/include/boost/predef/library/c/zos.h:
 
 /usr/include/boost/preprocessor/comma_if.hpp:
@@ -2917,12 +2967,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/concept_check.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/boost/preprocessor/detail/is_binary.hpp:
 
@@ -2982,10 +3026,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 
 /usr/include/boost/mpl/list/aux_/empty.hpp:
 
-/usr/include/boost/smart_ptr/weak_ptr.hpp:
-
-/usr/include/boost/mpl/not_equal_to.hpp:
-
 /usr/include/boost/make_shared.hpp:
 
 /usr/include/log4cxx/level.h:
@@ -2999,10 +3039,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/mpl/list/aux_/iterator.hpp:
 
 /usr/include/boost/mpl/iterator_tags.hpp:
-
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/boost/mpl/bind.hpp:
 
 /usr/include/boost/range/iterator.hpp:
 
@@ -3281,9 +3317,3 @@ omnicar/navigation/base_local_planner/CMakeFiles/point_grid.dir/src/point_grid_n
 /usr/include/boost/concept/usage.hpp:
 
 /usr/include/boost/mpl/equal_to.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
-/usr/include/boost/mpl/less_equal.hpp:

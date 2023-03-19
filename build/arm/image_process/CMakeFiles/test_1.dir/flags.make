@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/arm/image_process/include -I/usr/include/opencv -I/home/huo/Downloads/ur3_ws/src/arm/image_process -I/home/huo/Downloads/ur3_ws/build/arm/image_process -I/home/huo/Downloads/ur3_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
 
-CXX_FLAGS = -std=gnu++14 -std=c++11
+CXX_FLAGS = -O2 -g -DNDEBUG -std=gnu++14 -std=c++11
 

@@ -1,1 +1,1 @@
-/usr/lib/ccache/c++ -fPIC -shared -Wl,-soname,librelaxed_astar_lib.so -o /home/huo/Downloads/ur3_ws/devel/lib/librelaxed_astar_lib.so CMakeFiles/relaxed_astar_lib.dir/src/RAstar_ros.cpp.o 
+/usr/lib/ccache/c++ -fPIC -O2 -g -DNDEBUG -shared -Wl,-soname,librelaxed_astar_lib.so -o /home/huo/Downloads/ur3_ws/devel/lib/librelaxed_astar_lib.so CMakeFiles/relaxed_astar_lib.dir/src/RAstar_ros.cpp.o 

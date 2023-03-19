@@ -61,13 +61,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -112,6 +115,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -152,6 +156,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -184,6 +190,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -194,6 +202,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cameraparameters.cpp.
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -342,13 +351,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -393,6 +405,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -433,6 +446,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -465,6 +480,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -475,6 +492,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/cvdrawingutils.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -616,6 +634,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/exception
  /usr/include/c++/7/bits/exception.h
  /usr/include/c++/7/bits/exception_ptr.h
@@ -709,10 +728,13 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/cstdio
  /usr/include/stdio.h
@@ -720,6 +742,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/debug.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -827,13 +851,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -878,6 +905,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -918,6 +946,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -950,6 +980,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -960,6 +992,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/dictionary.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -1114,13 +1147,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -1165,6 +1201,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -1205,6 +1242,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1237,6 +1276,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -1247,6 +1288,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/ippe.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -1393,13 +1435,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -1444,6 +1489,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -1484,6 +1530,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1516,6 +1564,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -1526,6 +1576,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/marker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -1674,13 +1725,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -1725,6 +1779,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -1765,6 +1820,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1797,6 +1854,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -1807,6 +1866,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerdetector.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -1980,13 +2040,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -2031,6 +2094,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -2071,6 +2135,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2103,6 +2169,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -2113,6 +2181,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabeler.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -2259,13 +2328,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/dictio
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -2310,6 +2382,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/dictio
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -2350,6 +2423,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/dictio
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2382,6 +2457,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/dictio
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -2392,6 +2469,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/dictio
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -2546,13 +2624,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/svmmar
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -2597,6 +2678,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/svmmar
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -2637,6 +2719,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/svmmar
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2669,6 +2753,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/svmmar
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -2679,6 +2765,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markerlabelers/svmmar
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -2832,13 +2919,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -2883,6 +2973,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -2923,6 +3014,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2955,6 +3048,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -2965,6 +3060,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/markermap.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h
@@ -3122,13 +3218,16 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/7/bits/std_abs.h
  /usr/include/c++/7/array
  /usr/include/c++/7/utility
@@ -3173,6 +3272,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/7/bits/allocator.h
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h
  /usr/include/c++/7/ext/new_allocator.h
@@ -3213,6 +3313,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/_G_config.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/7/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -3245,6 +3347,8 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
  /usr/include/c++/7/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/c++/7/cmath
  /usr/include/math.h
  /usr/include/x86_64-linux-gnu/bits/math-vector.h
@@ -3255,6 +3359,7 @@ arm/handeye/aruco_ros/aruco/CMakeFiles/aruco.dir/src/aruco/posetracker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
  /opt/intel/openvino_2021.4.752/opencv/include/opencv2/core/cvstd_wrapper.hpp
  /usr/include/c++/7/memory
  /usr/include/c++/7/bits/stl_uninitialized.h

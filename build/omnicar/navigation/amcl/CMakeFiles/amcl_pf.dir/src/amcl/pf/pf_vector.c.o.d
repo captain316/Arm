@@ -18,6 +18,7 @@ omnicar/navigation/amcl/CMakeFiles/amcl_pf.dir/src/amcl/pf/pf_vector.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /home/huo/Downloads/ur3_ws/src/omnicar/navigation/amcl/include/amcl/pf/pf_vector.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
@@ -28,4 +29,6 @@ omnicar/navigation/amcl/CMakeFiles/amcl_pf.dir/src/amcl/pf/pf_vector.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /home/huo/Downloads/ur3_ws/src/omnicar/navigation/amcl/include/amcl/pf/eig3.h

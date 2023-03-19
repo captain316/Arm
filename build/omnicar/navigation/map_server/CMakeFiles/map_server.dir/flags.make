@@ -6,5 +6,5 @@ CXX_DEFINES = -DHAVE_YAMLCPP_GT_0_5_0 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_S
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/omnicar/navigation/map_server/include -I/usr/include/bullet -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/SDL
 
-CXX_FLAGS = -std=c++11
+CXX_FLAGS = -O2 -g -DNDEBUG -std=c++11
 

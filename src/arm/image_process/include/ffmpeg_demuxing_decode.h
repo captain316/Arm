@@ -1,4 +1,15 @@
-﻿#ifndef FFMPEG_DEMUXING_DECODE_H
+﻿/*这个 C++ 头文件，提供了一个名为 ffmpegDemuxingDecode 的类，用于解码音视频文件。
+该头文件引用了许多 FFmpeg 库，并使用了一些 FFmpeg 的数据结构。类的主要方法包括：
+
+init()：初始化解码器
+init_onlyWrite(const char* _path)：初始化编码器，用于将视频帧写入文件
+writeStreamToFile()：将视频帧写入文件
+demux_decode_a_frame()：解码一帧视频
+safeDelete()：释放解码器和编码器
+set_srcFilename(std::string _name)：设置输入文件路径或 url。
+在类的构造函数中，它使用了一些默认参数来初始化类的一些变量，
+例如输入视频的宽度和高度、流 ID 等等。类还定义了一些私有变量来存储 FFmpeg 相关数据结构的指针和一些配置选项。*/
+#ifndef FFMPEG_DEMUXING_DECODE_H
 #define FFMPEG_DEMUXING_DECODE_H
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -27,11 +38,11 @@ class ffmpegDemuxingDecode
 {
 public:
     int init();
-    int init_onlyWrite(const char* _path);
-    int writeStreamToFile();
-    cv::Mat demux_decode_a_frame();
-    void safeDelete();
-    void set_srcFilename(std::string _name);
+    int init_onlyWrite(const char* _path); //初始化编码器，用于将视频帧写入文件
+    int writeStreamToFile();  //将视频帧写入文件
+    cv::Mat demux_decode_a_frame();  //解码一帧视频
+    void safeDelete();               //释放解码器和编码器
+    void set_srcFilename(std::string _name);  //设置输入文件路径或 url。
 
 private:
     AVFormatContext *m_pFmtCtx = nullptr;       //创建音视频格式上下文类型的指针,AVFormatContext描述了一个媒体文件或媒体流的构成和基本信息

@@ -69,6 +69,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/include/c++/7/bits/std_abs.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -92,13 +93,16 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /home/huo/Downloads/ur3_ws/src/omnicar/navigation/costmap_2d/include/costmap_2d/costmap_2d.h \
   /usr/include/c++/7/queue \
   /usr/include/c++/7/deque \
@@ -123,6 +127,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/7/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -160,6 +165,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/_G_config.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/7/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -247,6 +254,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -410,6 +418,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/c++/7/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/boost/config/no_tr1/complex.hpp \
   /usr/include/c++/7/complex \
   /usr/include/c++/7/sstream \
@@ -1624,13 +1634,16 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/7/bits/std_abs.h \
   /usr/include/c++/7/string \
   /usr/include/c++/7/bits/stringfwd.h \
@@ -1663,6 +1676,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/7/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -1716,6 +1730,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/_G_config.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/7/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1759,6 +1775,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /opt/ros/melodic/include/ros/exception.h \
   /opt/ros/melodic/include/ros/duration.h \
   /usr/include/c++/7/math.h \
@@ -1789,6 +1806,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -1961,6 +1979,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
   /usr/include/c++/7/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/boost/config/no_tr1/complex.hpp \
   /usr/include/c++/7/complex \
   /usr/include/c++/7/sstream \
@@ -3882,11 +3902,13 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/algorithm/string/yes_no_type.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
+/opt/ros/melodic/include/angles/angles.h:
 
-/usr/include/boost/mpl/equal_to.hpp:
+/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/include/base_local_planner/map_grid.h:
 
-/usr/include/boost/concept/usage.hpp:
+/opt/ros/melodic/include/geometry_msgs/Quaternion.h:
+
+/opt/ros/melodic/include/geometry_msgs/Pose.h:
 
 /usr/include/boost/mpl/iter_fold.hpp:
 
@@ -3989,12 +4011,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
-
-/usr/include/boost/mpl/comparison.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h:
-
-/usr/include/c++/7/sstream:
 
 /usr/include/boost/mpl/aux_/full_lambda.hpp:
 
@@ -4110,10 +4126,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/range/iterator.hpp:
 
-/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h:
-
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
-
 /usr/include/boost/mpl/iterator_tags.hpp:
 
 /usr/include/boost/mpl/list/aux_/iterator.hpp:
@@ -4132,11 +4144,7 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/make_shared.hpp:
 
-/usr/include/boost/smart_ptr/weak_ptr.hpp:
-
 /usr/include/boost/mpl/size_fwd.hpp:
-
-/opt/ros/melodic/include/geometry_msgs/Quaternion.h:
 
 /usr/include/boost/mpl/long.hpp:
 
@@ -4193,14 +4201,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp:
 
 /usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/opt/ros/melodic/include/dynamic_reconfigure/DoubleParameter.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/Swap.h:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
 
@@ -4376,10 +4376,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/thread/xtime.hpp:
 
-/opt/ros/melodic/include/tf2/impl/convert.h:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
 /usr/include/c++/7/cwctype:
 
 /usr/include/boost/date_time/gregorian/greg_duration.hpp:
@@ -4423,10 +4419,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/predef/compiler/palm.h:
 
 /usr/include/c++/7/bits/locale_facets_nonio.h:
-
-/usr/include/boost/mpl/greater_equal.hpp:
-
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /usr/include/boost/math/policies/error_handling.hpp:
 
@@ -4502,10 +4494,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/predef/platform/windows_store.h:
 
-/usr/include/boost/thread/detail/invoke.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/boost/predef/other/endian.h:
 
 /usr/include/boost/predef/os/unix.h:
@@ -4552,45 +4540,27 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
 
-/usr/include/c++/7/bits/list.tcc:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
-/usr/include/c++/7/bits/istream.tcc:
+/usr/include/boost/mpl/vector/aux_/push_front.hpp:
 
-/usr/include/boost/mpl/vector/vector20.hpp:
+/usr/include/boost/predef/os/amigaos.h:
 
-/usr/include/boost/predef/detail/comp_detected.h:
+/usr/include/boost/type_traits/is_union.hpp:
 
-/usr/include/boost/date_time/dst_rules.hpp:
+/usr/include/boost/predef/os.h:
 
-/usr/include/c++/7/list:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
 
-/usr/include/boost/type_traits/add_rvalue_reference.hpp:
+/usr/local/include/eigen3/Eigen/src/Core/Block.h:
 
-/usr/include/linux/errno.h:
+/usr/include/boost/mpl/aux_/fold_impl.hpp:
 
-/usr/include/c++/7/bits/atomic_lockfree_defines.h:
+/usr/include/boost/predef/library/std/vacpp.h:
 
-/opt/ros/melodic/include/ros/message_forward.h:
-
-/usr/include/boost/mpl/greater.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/c++/7/atomic:
-
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
-
-/usr/include/boost/predef/hardware.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/boost/detail/is_xxx.hpp:
-
-/usr/include/boost/bind/bind.hpp:
+/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
 
 /usr/include/c++/7/cstdio:
 
@@ -4632,6 +4602,12 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/time.h:
 
+/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/usr/include/boost/mpl/aux_/config/arrays.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
 /usr/include/c++/7/streambuf:
 
 /usr/include/boost/date_time/compiler_config.hpp:
@@ -4652,15 +4628,29 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/locale.h:
 
+/usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h:
+
+/usr/include/boost/mpl/comparison.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/boost/thread/detail/invoke.hpp:
+
 /usr/include/boost/type_traits/is_array.hpp:
 
 /usr/include/c++/7/bits/localefwd.h:
 
+/usr/include/boost/mpl/list.hpp:
+
+/usr/include/boost/predef/library/std/stdcpp3.h:
+
+/usr/include/c++/7/ios:
+
+/usr/include/boost/preprocessor/enum_params.hpp:
+
+/usr/local/include/eigen3/Eigen/src/Core/SolverBase.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/boost/mpl/iter_fold_if.hpp:
 
@@ -4688,6 +4678,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/move/detail/config_begin.hpp:
 
+/usr/include/linux/errno.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/7/typeinfo:
@@ -4714,6 +4706,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/algorithm/string/predicate_facade.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
 
 /usr/include/boost/predef/os/windows.h:
@@ -4734,11 +4728,61 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+/usr/include/boost/mpl/lambda_fwd.hpp:
+
+/usr/include/boost/predef/compiler/gcc_xml.h:
+
+/usr/include/boost/type_traits/is_base_and_derived.hpp:
+
+/usr/include/boost/move/traits.hpp:
+
+/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/boost/detail/is_xxx.hpp:
+
+/usr/include/boost/bind/bind.hpp:
+
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/include/boost/predef/hardware.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
+
+/usr/include/boost/mpl/list/aux_/tag.hpp:
+
+/opt/ros/melodic/include/dynamic_reconfigure/DoubleParameter.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/Swap.h:
+
+/usr/include/boost/mpl/joint_view.hpp:
+
+/usr/include/boost/thread/condition_variable.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/boost/predef/compiler/llvm.h:
+
+/usr/include/boost/predef/library/std/sgi.h:
+
+/home/huo/Downloads/ur3_ws/devel/include/base_local_planner/BaseLocalPlannerConfig.h:
+
 /usr/include/Poco/ScopedLock.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
+
+/usr/include/boost/type_traits/is_constructible.hpp:
+
+/usr/include/c++/7/sstream:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -4757,12 +4801,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/features.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
-
-/usr/include/boost/type_traits/is_union.hpp:
-
-/usr/include/boost/predef/os.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -4806,18 +4844,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
-/usr/include/boost/mpl/lambda_fwd.hpp:
-
-/usr/include/boost/predef/compiler/gcc_xml.h:
-
-/usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/boost/move/traits.hpp:
-
-/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
 /usr/include/x86_64-linux-gnu/bits/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:
@@ -4836,13 +4862,11 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/local/include/eigen3/Eigen/src/Core/Transpositions.h:
 
-/usr/include/boost/predef/compiler/edg.h:
-
-/usr/include/boost/date_time/locale_config.hpp:
-
 /usr/include/boost/mpl/advance.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/boost/mpl/vector/aux_/vector0.hpp:
 
@@ -4872,6 +4896,24 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/concept/assert.hpp:
 
+/opt/ros/melodic/include/tf2/impl/convert.h:
+
+/usr/include/boost/date_time/time_clock.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h:
+
+/usr/include/boost/mpl/negate.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
+
+/usr/include/boost/thread/detail/delete.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
 /usr/include/c++/7/bits/stl_construct.h:
 
 /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
@@ -4897,6 +4939,28 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/c++/7/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/boost/system/api_config.hpp:
+
+/usr/include/c++/7/bits/shared_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/boost/type_traits/detail/config.hpp:
+
+/usr/include/boost/preprocessor/control/deduce_d.hpp:
+
+/usr/include/boost/mpl/at.hpp:
+
+/usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp:
+
+/usr/include/boost/config.hpp:
+
+/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+
+/usr/include/c++/7/bits/basic_ios.tcc:
 
 /usr/include/c++/7/bits/move.h:
 
@@ -5044,6 +5108,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/detail/sp_typeinfo.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/c++/7/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
@@ -5061,6 +5127,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
+
+/usr/include/boost/thread/executors/generic_executor_ref.hpp:
 
 /usr/include/boost/mpl/vector/aux_/O1_size.hpp:
 
@@ -5152,8 +5222,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/ratio/detail/mpl/abs.hpp:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
 /usr/include/boost/preprocessor/logical/bitand.hpp:
 
 /opt/ros/melodic/include/kdl/frames.hpp:
@@ -5183,8 +5251,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/mpl/back_inserter.hpp:
 
 /usr/include/boost/detail/iterator.hpp:
-
-/usr/include/c++/7/bits/cxxabi_init_exception.h:
 
 /opt/ros/melodic/include/ros/platform.h:
 
@@ -5218,6 +5284,16 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/lexical_cast/detail/widest_char.hpp:
 
+/usr/include/c++/7/list:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+
+/usr/include/boost/type_traits/add_rvalue_reference.hpp:
+
+/usr/include/c++/7/bits/atomic_lockfree_defines.h:
+
+/opt/ros/melodic/include/ros/message_forward.h:
+
 /usr/include/c++/7/bits/basic_ios.h:
 
 /usr/include/boost/algorithm/string/detail/find_format_all.hpp:
@@ -5232,9 +5308,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/c++/7/stdexcept:
 
-/usr/include/boost/thread/lock_guard.hpp:
-
 /usr/include/boost/mpl/aux_/has_tag.hpp:
+
+/usr/include/boost/thread/lock_guard.hpp:
 
 /usr/include/boost/date_time/time_defs.hpp:
 
@@ -5264,25 +5340,17 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/log4cxx/logstring.h:
 
-/usr/include/boost/system/api_config.hpp:
+/usr/include/boost/algorithm/string/std/string_traits.hpp:
 
-/usr/include/c++/7/bits/shared_ptr.h:
+/usr/include/boost/mpl/aux_/advance_backward.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/boost/exception_ptr.hpp:
 
-/usr/include/boost/type_traits/detail/config.hpp:
+/opt/ros/melodic/include/ros/rate.h:
 
-/usr/include/boost/preprocessor/control/deduce_d.hpp:
+/usr/include/boost/get_pointer.hpp:
 
-/usr/include/boost/mpl/at.hpp:
-
-/usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp:
-
-/usr/include/boost/config.hpp:
-
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
-
-/usr/include/c++/7/bits/basic_ios.tcc:
+/usr/include/boost/predef/library/std/stlport.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -5318,30 +5386,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/date_time/gregorian/greg_day.hpp:
 
-/usr/include/boost/mpl/joint_view.hpp:
-
-/usr/include/boost/thread/condition_variable.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/boost/thread/executors/generic_executor_ref.hpp:
-
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
-/usr/include/boost/predef/compiler/llvm.h:
-
-/usr/include/boost/predef/platform/windows_desktop.h:
-
-/usr/include/boost/parameter/preprocessor.hpp:
-
-/usr/include/boost/smart_ptr/allocate_shared_array.hpp:
-
-/usr/include/c++/7/system_error:
-
-/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
 /opt/ros/melodic/include/pluginlib/class_list_macros.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -5369,10 +5413,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/string.h:
 
 /usr/include/boost/predef/architecture/parisc.h:
-
-/usr/include/boost/mpl/vector/aux_/push_front.hpp:
-
-/usr/include/boost/predef/os/amigaos.h:
 
 /usr/include/console_bridge/console.h:
 
@@ -5424,6 +5464,38 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/local/include/eigen3/Eigen/src/Core/Map.h:
 
+/usr/include/boost/predef/platform/windows_desktop.h:
+
+/usr/include/boost/parameter/preprocessor.hpp:
+
+/usr/include/boost/smart_ptr/allocate_shared_array.hpp:
+
+/usr/include/c++/7/system_error:
+
+/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
+/usr/include/boost/predef/compiler/edg.h:
+
+/usr/include/boost/date_time/locale_config.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/7/atomic:
+
+/usr/include/c++/7/bits/istream.tcc:
+
+/usr/include/c++/7/bits/cxxabi_init_exception.h:
+
+/usr/include/boost/mpl/vector/vector20.hpp:
+
+/usr/include/boost/predef/detail/comp_detected.h:
+
+/usr/include/boost/date_time/dst_rules.hpp:
+
+/usr/include/c++/7/bits/list.tcc:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
 /usr/include/c++/7/bits/stl_algo.h:
 
 /usr/include/c++/7/bits/codecvt.h:
@@ -5433,6 +5505,14 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/thread/csbl/memory/pointer_traits.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
+
+/usr/include/boost/predef/os/aix.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/7/bits/stl_relops.h:
+
+/usr/include/boost/predef/architecture/mips.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
 
@@ -5498,6 +5578,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/mpl/aux_/numeric_op.hpp:
 
+/usr/include/c++/7/bits/alloc_traits.h:
+
+/usr/include/boost/type_traits/remove_cv.hpp:
+
 /usr/include/c++/7/bits/stl_pair.h:
 
 /usr/include/boost/mpl/set/aux_/erase_key_impl.hpp:
@@ -5520,27 +5604,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/local/include/eigen3/Eigen/src/Core/Product.h:
 
-/usr/include/stdint.h:
-
-/usr/include/c++/7/bits/stl_relops.h:
-
-/usr/include/boost/predef/architecture/mips.h:
-
-/usr/include/boost/predef/os/aix.h:
-
 /usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
 /usr/include/boost/predef/detail/_exception.h:
-
-/usr/include/c++/7/ios:
-
-/usr/include/boost/preprocessor/enum_params.hpp:
-
-/usr/local/include/eigen3/Eigen/src/Core/SolverBase.h:
-
-/usr/include/boost/mpl/list.hpp:
-
-/usr/include/boost/predef/library/std/stdcpp3.h:
 
 /usr/include/boost/mpl/clear_fwd.hpp:
 
@@ -5634,10 +5700,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/predef/compiler/compaq.h:
 
-/usr/include/boost/mpl/negate.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
 /usr/include/boost/predef/language.h:
@@ -5645,6 +5707,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/c++/7/bits/postypes.h:
 
 /usr/include/boost/predef/architecture/sys370.h:
+
+/usr/include/boost/algorithm/string/std_containers_traits.hpp:
+
+/usr/include/boost/preprocessor/tuple/eat.hpp:
 
 /opt/ros/melodic/include/nav_msgs/OccupancyGrid.h:
 
@@ -5730,10 +5796,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/predef/compiler/tendra.h:
 
-/home/huo/Downloads/ur3_ws/devel/include/base_local_planner/BaseLocalPlannerConfig.h:
-
-/usr/include/boost/predef/library/std/sgi.h:
-
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
@@ -5788,12 +5850,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/predef/library/std/_prefix.h:
 
-/usr/include/boost/mpl/push_back_fwd.hpp:
-
-/usr/include/boost/type_traits/is_enum.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
-
 /usr/include/boost/iterator/detail/config_undef.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/_G_config.h:
@@ -5822,9 +5878,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/c++/7/exception:
 
-/usr/include/stdio.h:
-
 /usr/include/boost/predef/os/irix.h:
+
+/usr/include/stdio.h:
 
 /usr/include/c++/7/bits/locale_classes.tcc:
 
@@ -5840,31 +5896,25 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/predef/library/std/msl.h:
 
-/usr/include/boost/exception_ptr.hpp:
+/usr/include/boost/mpl/equal_to.hpp:
 
-/opt/ros/melodic/include/ros/rate.h:
+/usr/include/boost/concept/usage.hpp:
 
-/usr/include/boost/get_pointer.hpp:
+/usr/include/boost/smart_ptr/weak_ptr.hpp:
 
-/usr/include/boost/predef/library/std/stlport.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+/usr/include/boost/mpl/greater.hpp:
 
-/usr/local/include/eigen3/Eigen/src/Core/Block.h:
+/usr/include/boost/mpl/push_back_fwd.hpp:
 
-/usr/include/boost/mpl/aux_/advance_backward.hpp:
+/usr/include/boost/type_traits/is_enum.hpp:
 
-/usr/include/boost/algorithm/string/std/string_traits.hpp:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
 
-/usr/include/boost/mpl/aux_/fold_impl.hpp:
+/usr/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/predef/library/std/vacpp.h:
-
-/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/usr/include/boost/type_traits/remove_cv.hpp:
-
-/usr/include/c++/7/bits/alloc_traits.h:
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp:
 
@@ -6160,10 +6210,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/utility/binary.hpp:
 
-/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
-
-/usr/include/boost/thread/detail/delete.hpp:
-
 /usr/include/boost/thread/detail/move.hpp:
 
 /usr/include/boost/move/utility.hpp:
@@ -6191,8 +6237,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/config/no_tr1/functional.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
-/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/include/base_local_planner/map_grid.h:
 
 /usr/include/boost/atomic/atomic.hpp:
 
@@ -6552,6 +6596,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/utility/detail/result_of_iterate.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/boost/thread/future.hpp:
 
 /usr/include/boost/thread/cv_status.hpp:
@@ -6567,6 +6613,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/atomic/detail/operations_fwd.hpp:
 
 /usr/include/boost/type_traits/add_cv.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/boost/type_traits/is_const.hpp:
 
@@ -6636,6 +6684,10 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/thread/futures/future_error_code.hpp:
 
+/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/include/base_local_planner/trajectory_inc.h:
+
+/usr/include/boost/thread/futures/wait_for_all.hpp:
+
 /usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
 
 /usr/include/boost/thread/futures/wait_for_any.hpp:
@@ -6682,8 +6734,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
-/usr/include/boost/type_traits/is_constructible.hpp:
-
 /usr/include/boost/predef/platform.h:
 
 /usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
@@ -6724,9 +6774,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/preprocessor/repetition/enum.hpp:
 
-/usr/include/boost/predef/compiler/mpw.h:
-
 /usr/include/boost/chrono/system_clocks.hpp:
+
+/usr/include/boost/predef/compiler/mpw.h:
 
 /usr/local/include/eigen3/Eigen/src/Core/Redux.h:
 
@@ -6805,6 +6855,8 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/thread/lock_types.hpp:
 
 /usr/local/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/c++/7/bits/locale_classes.h:
 
@@ -6916,6 +6968,14 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/log4cxx/helpers/transcoder.h:
 
+/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/src/trajectory_planner_ros.cpp:
+
+/usr/include/boost/algorithm/string.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/libio.h:
+
+/usr/include/log4cxx/helpers/object.h:
+
 /usr/include/boost/variant/detail/forced_return.hpp:
 
 /usr/include/log4cxx/helpers/objectptr.h:
@@ -6972,9 +7032,9 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 
 /usr/include/boost/numeric/conversion/conversion_traits.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
 /usr/include/boost/predef/platform/ios.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
 
 /usr/include/boost/range/has_range_iterator.hpp:
 
@@ -6983,10 +7043,6 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
 
 /usr/include/boost/range/concepts.hpp:
-
-/usr/include/boost/preprocessor/tuple/eat.hpp:
-
-/usr/include/boost/algorithm/string/std_containers_traits.hpp:
 
 /usr/include/boost/concept/detail/backward_compatibility.hpp:
 
@@ -7107,19 +7163,3 @@ omnicar/navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /opt/ros/melodic/include/dynamic_reconfigure/config_init_mutex.h:
-
-/opt/ros/melodic/include/geometry_msgs/Pose.h:
-
-/usr/include/boost/thread/futures/wait_for_all.hpp:
-
-/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/include/base_local_planner/trajectory_inc.h:
-
-/opt/ros/melodic/include/angles/angles.h:
-
-/home/huo/Downloads/ur3_ws/src/omnicar/navigation/base_local_planner/src/trajectory_planner_ros.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/libio.h:
-
-/usr/include/log4cxx/helpers/object.h:
-
-/usr/include/boost/algorithm/string.hpp:

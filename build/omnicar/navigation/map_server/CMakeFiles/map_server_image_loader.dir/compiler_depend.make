@@ -19,6 +19,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/7/stdexcept \
   /usr/include/c++/7/exception \
   /usr/include/c++/7/bits/exception.h \
@@ -61,6 +63,7 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/7/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -126,10 +129,13 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/7/bits/std_abs.h \
   /usr/include/c++/7/cstdio \
   /usr/include/stdio.h \
@@ -137,6 +143,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/_G_config.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/7/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -190,6 +198,7 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h \
   /usr/include/assert.h \
   /usr/include/bullet/LinearMath/btMinMax.h \
@@ -212,6 +221,7 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -1028,11 +1038,23 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/vector/aux_/begin_end.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+/usr/include/boost/mpl/vector/aux_/size.hpp:
 
-/usr/include/boost/preprocessor/list/fold_left.hpp:
+/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
 
-/usr/include/boost/predef/compiler/hp_acc.h:
+/usr/include/boost/mpl/prior.hpp:
+
+/usr/include/boost/mpl/distance_fwd.hpp:
+
+/usr/include/boost/mpl/advance_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
+
+/usr/include/boost/mpl/minus.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
+
+/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
 /usr/include/boost/predef/compiler/digitalmars.h:
 
@@ -1090,8 +1112,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/linux/limits.h:
 
-/usr/include/boost/mpl/vector/aux_/size.hpp:
-
 /usr/include/SDL/SDL_cpuinfo.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_base.h:
@@ -1144,19 +1164,11 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
-/usr/include/boost/predef/compiler/ekopath.h:
-
-/usr/include/c++/7/bits/codecvt.h:
-
 /usr/include/boost/mpl/advance.hpp:
 
 /usr/include/c++/7/memory:
 
 /usr/include/c++/7/bits/stl_algo.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h:
-
-/usr/include/boost/predef/compiler/gcc.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
 
@@ -1170,12 +1182,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /opt/ros/melodic/include/ros/types.h:
 
-/usr/include/boost/type_traits/remove_cv.hpp:
-
-/usr/include/c++/7/bits/locale_classes.h:
-
-/usr/include/boost/mpl/aux_/numeric_op.hpp:
-
 /usr/include/c++/7/bits/ostream.tcc:
 
 /usr/include/boost/config/detail/posix_features.hpp:
@@ -1185,8 +1191,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
 /usr/include/boost/predef/library/std/msl.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/boost/predef/compiler/compaq.h:
 
@@ -1252,6 +1256,12 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/c++/7/cstdio:
 
+/usr/include/boost/type_traits/remove_cv.hpp:
+
+/usr/include/boost/mpl/aux_/numeric_op.hpp:
+
+/usr/include/c++/7/bits/locale_classes.h:
+
 /usr/include/bullet/LinearMath/btQuadWord.h:
 
 /usr/include/boost/mpl/aux_/yes_no.hpp:
@@ -1292,14 +1302,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/SDL/SDL_version.h:
 
-/usr/include/boost/predef/architecture/ppc.h:
-
-/usr/include/boost/preprocessor/cat.hpp:
-
-/usr/include/SDL/SDL_loadso.h:
-
-/usr/include/boost/mpl/integral_c.hpp:
-
 /usr/include/c++/7/bits/stl_construct.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
@@ -1326,9 +1328,23 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
-/usr/include/c++/7/iosfwd:
+/usr/include/SDL/SDL_active.h:
 
-/usr/include/boost/mpl/vector/aux_/back.hpp:
+/usr/include/c++/7/bits/vector.tcc:
+
+/usr/include/boost/smart_ptr/shared_ptr.hpp:
+
+/usr/include/boost/type_traits/detail/is_function_ptr_helper.hpp:
+
+/usr/include/c++/7/bits/shared_ptr_base.h:
+
+/usr/include/SDL/SDL_rwops.h:
+
+/opt/ros/melodic/include/ros/datatypes.h:
+
+/usr/include/boost/mpl/list.hpp:
+
+/usr/include/SDL/SDL_mutex.h:
 
 /usr/include/boost/mpl/comparison.hpp:
 
@@ -1337,8 +1353,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/bullet/LinearMath/btVector3.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/boost/mpl/distance_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
@@ -1360,6 +1374,16 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /opt/ros/melodic/include/ros/platform.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/boost/mpl/vector/aux_/empty.hpp:
+
+/usr/include/boost/predef/compiler/intel.h:
+
+/usr/include/boost/preprocessor/list/fold_left.hpp:
+
 /usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h:
@@ -1372,17 +1396,29 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/vector/aux_/clear.hpp:
 
+/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
 /usr/include/boost/predef/compiler/borland.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/boost/predef/hardware/simd/x86.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/stdio.h:
 
 /usr/include/boost/predef/architecture.h:
 
 /usr/include/boost/config/no_tr1/cmath.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
+
+/usr/include/boost/type_traits/is_enum.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/boost/predef/compiler/edg.h:
 
@@ -1406,7 +1442,9 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/c++/7/stdexcept:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/minus.hpp:
+/usr/include/c++/7/iosfwd:
+
+/usr/include/boost/mpl/vector/aux_/back.hpp:
 
 /usr/include/bullet/LinearMath/btAlignedAllocator.h:
 
@@ -1432,6 +1470,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/preprocessor/array/data.hpp:
 
+/usr/include/c++/7/bits/stl_algobase.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
@@ -1449,8 +1489,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/7/string:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/string.h:
 
@@ -1471,8 +1509,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/c++/7/bits/move.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
-
-/usr/include/c++/7/bits/vector.tcc:
 
 /usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
@@ -1500,6 +1536,32 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/boost/predef/architecture/ppc.h:
+
+/usr/include/boost/preprocessor/cat.hpp:
+
+/usr/include/SDL/SDL_loadso.h:
+
+/usr/include/boost/mpl/integral_c.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/boost/predef/os/qnxnto.h:
+
+/usr/include/boost/mpl/always.hpp:
+
+/usr/include/c++/7/ext/aligned_buffer.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/c++/7/ctime:
+
 /usr/include/c++/7/ext/numeric_traits.h:
 
 /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
@@ -1514,9 +1576,27 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/quote.hpp:
 
+/usr/include/boost/detail/sp_typeinfo.hpp:
+
+/usr/include/ctype.h:
+
 /usr/include/locale.h:
 
 /usr/include/boost/mpl/aux_/lambda_spec.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/boost/version.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/7/bits/exception.h:
+
+/usr/include/c++/7/bits/stringfwd.h:
+
+/usr/include/boost/mpl/list/aux_/item.hpp:
+
+/usr/include/c++/7/ext/alloc_traits.h:
 
 /usr/include/c++/7/bits/exception_defines.h:
 
@@ -1572,21 +1652,11 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/x86_64-linux-gnu/bits/sysmacros.h:
 
-/usr/include/c++/7/bits/locale_facets.h:
-
-/usr/include/SDL/SDL_error.h:
-
 /usr/include/boost/preprocessor/detail/is_binary.hpp:
 
 /usr/include/c++/7/bits/concept_check.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/7/bits/stringfwd.h:
-
-/usr/include/boost/mpl/list/aux_/item.hpp:
-
-/usr/include/c++/7/ext/alloc_traits.h:
 
 /usr/include/c++/7/ios:
 
@@ -1608,9 +1678,9 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
 
-/usr/include/c++/7/bits/stl_algobase.h:
+/usr/include/SDL/SDL_error.h:
 
-/usr/include/boost/predef/compiler/gcc_xml.h:
+/usr/include/c++/7/bits/locale_facets.h:
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
@@ -1634,45 +1704,23 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/c++/7/bits/shared_ptr.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/bits/_G_config.h:
 
 /usr/include/boost/predef/library/std/cxx.h:
-
-/usr/include/boost/predef.h:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
 
 /usr/include/c++/7/clocale:
 
 /usr/include/c++/7/backward/binders.h:
 
-/usr/include/c++/7/limits:
-
-/usr/include/SDL/SDL_audio.h:
-
-/usr/include/boost/predef/compiler/iar.h:
-
-/usr/include/boost/mpl/aux_/iter_apply.hpp:
-
 /usr/include/c++/7/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/predef/os/qnxnto.h:
-
-/usr/include/boost/mpl/always.hpp:
-
-/usr/include/c++/7/ext/aligned_buffer.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/c++/7/ctime:
 
 /usr/include/c++/7/bits/alloc_traits.h:
 
 /usr/include/boost/predef/os/android.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/7/cmath:
 
@@ -1696,19 +1744,17 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/aux_/find_if_pred.hpp:
 
-/usr/include/boost/detail/sp_typeinfo.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
+/usr/include/boost/mpl/aux_/config/arrays.hpp:
+
+/usr/include/boost/mpl/bind.hpp:
 
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/boost/version.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/c++/7/bits/exception.h:
 
 /usr/include/c++/7/bits/cxxabi_forced.h:
 
@@ -1738,6 +1784,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/push_back_fwd.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -1749,6 +1797,20 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/SDL/SDL_stdinc.h:
 
 /usr/include/boost/mpl/identity.hpp:
+
+/usr/include/boost/predef.h:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
+
+/usr/include/boost/mpl/list/aux_/tag.hpp:
+
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/c++/7/istream:
 
@@ -1794,15 +1856,17 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/stdio.h:
 
 /usr/include/features.h:
 
 /usr/include/boost/preprocessor/control/while.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/boost/mpl/aux_/na.hpp:
+
+/usr/include/c++/7/bits/istream.tcc:
 
 /usr/include/c++/7/bits/std_abs.h:
 
@@ -1842,12 +1906,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/linux/errno.h:
 
-/usr/include/boost/predef/detail/comp_detected.h:
-
-/usr/include/boost/mpl/vector/vector20.hpp:
-
-/usr/include/c++/7/bits/istream.tcc:
-
 /opt/ros/melodic/include/nav_msgs/GetMap.h:
 
 /usr/include/boost/predef/library/c/uc.h:
@@ -1872,35 +1930,29 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
 
-/usr/include/SDL/SDL_mutex.h:
+/usr/include/c++/7/bits/codecvt.h:
 
-/usr/include/boost/smart_ptr/shared_ptr.hpp:
+/usr/include/boost/predef/compiler/ekopath.h:
 
-/usr/include/boost/type_traits/detail/is_function_ptr_helper.hpp:
+/usr/include/boost/predef/compiler/gcc_xml.h:
 
-/usr/include/c++/7/bits/shared_ptr_base.h:
+/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h:
 
-/usr/include/SDL/SDL_rwops.h:
+/usr/include/boost/predef/compiler/gcc.h:
 
-/opt/ros/melodic/include/ros/datatypes.h:
+/usr/include/boost/predef/detail/comp_detected.h:
 
-/usr/include/boost/mpl/list.hpp:
+/usr/include/boost/mpl/vector/vector20.hpp:
 
-/usr/include/boost/type_traits/is_enum.hpp:
+/usr/include/boost/predef/compiler/hp_acc.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+/usr/include/c++/7/limits:
 
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
+/usr/include/SDL/SDL_audio.h:
 
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+/usr/include/boost/predef/compiler/iar.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/SDL/SDL_active.h:
+/usr/include/boost/mpl/aux_/iter_apply.hpp:
 
 /usr/include/boost/predef/compiler/llvm.h:
 
@@ -1933,6 +1985,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/predef/library/c.h:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/predef/library/c/_prefix.h:
 
@@ -1981,6 +2035,8 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/predef/os/beos.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/boost/predef/os/bsd.h:
 
@@ -2124,8 +2180,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/limits/list.hpp:
 
-/usr/include/boost/mpl/aux_/na.hpp:
-
 /usr/include/boost/mpl/at_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/msvc_type.hpp:
@@ -2268,12 +2322,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 
 /usr/include/boost/mpl/limits/arity.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
 /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
 
 /opt/ros/melodic/include/ros/time.h:
@@ -2297,12 +2345,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/c++/7/map:
 
 /usr/include/boost/mpl/list/aux_/pop_front.hpp:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/predef/compiler/intel.h:
-
-/usr/include/boost/mpl/vector/aux_/empty.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -2333,10 +2375,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/mpl/list/aux_/iterator.hpp:
 
 /usr/include/boost/mpl/iterator_tags.hpp:
-
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/boost/mpl/bind.hpp:
 
 /usr/include/boost/mpl/void_fwd.hpp:
 
@@ -2393,8 +2431,6 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/mpl/lambda.hpp:
 
 /usr/include/boost/preprocessor/array/size.hpp:
-
-/usr/include/boost/mpl/prior.hpp:
 
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
 
@@ -2539,9 +2575,3 @@ omnicar/navigation/map_server/CMakeFiles/map_server_image_loader.dir/src/image_l
 /usr/include/boost/mpl/aux_/largest_int.hpp:
 
 /usr/include/boost/mpl/numeric_cast.hpp:
-
-/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
-
-/usr/include/boost/mpl/minus.hpp:
-
-/usr/include/boost/mpl/advance_fwd.hpp:

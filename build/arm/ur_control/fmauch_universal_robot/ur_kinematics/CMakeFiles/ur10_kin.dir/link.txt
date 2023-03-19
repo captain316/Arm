@@ -1,1 +1,1 @@
-/usr/lib/ccache/c++ -fPIC -shared -Wl,-soname,libur10_kin.so -o /home/huo/Downloads/ur3_ws/devel/lib/libur10_kin.so CMakeFiles/ur10_kin.dir/src/ur_kin.cpp.o 
+/usr/lib/ccache/c++ -fPIC -O2 -g -DNDEBUG -shared -Wl,-soname,libur10_kin.so -o /home/huo/Downloads/ur3_ws/devel/lib/libur10_kin.so CMakeFiles/ur10_kin.dir/src/ur_kin.cpp.o 

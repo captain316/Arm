@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/omnicar/scan_tools/ncd_parser/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
 
-CXX_FLAGS = -std=c++11
+CXX_FLAGS = -O2 -g -DNDEBUG -std=c++11
 

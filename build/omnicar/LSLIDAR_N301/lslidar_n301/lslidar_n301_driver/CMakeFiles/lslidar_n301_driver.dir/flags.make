@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/omnicar/LSLIDAR_N301/lslidar_n301/lslidar_n301_driver/include -I/home/huo/Downloads/ur3_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
 
-CXX_FLAGS = -std=gnu++14 -fPIC -std=c++11 -std=c++14
+CXX_FLAGS = -O2 -g -DNDEBUG -std=gnu++14 -fPIC -std=c++11 -std=c++14
 

@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/arm/ur_control/cartesian_controllers/cartesian_controller_handles/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3
 
-CXX_FLAGS = -fPIC -std=c++11 -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter
+CXX_FLAGS = -O2 -g -DNDEBUG -fPIC -std=c++11 -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter
 

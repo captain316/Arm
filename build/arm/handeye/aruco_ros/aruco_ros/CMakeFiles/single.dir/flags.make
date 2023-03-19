@@ -6,5 +6,5 @@ CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKA
 
 CXX_INCLUDES = -I/home/huo/Downloads/ur3_ws/src/arm/handeye/aruco_ros/aruco_ros/include -isystem /home/huo/Downloads/ur3_ws/devel/include -isystem /home/huo/Downloads/ur3_ws/src/arm/handeye/aruco_ros/aruco/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/opencv -isystem /opt/intel/openvino_2021.4.752/opencv/include
 
-CXX_FLAGS = -std=c++11
+CXX_FLAGS = -O2 -g -DNDEBUG -std=c++11
 
