@@ -28,9 +28,9 @@
 
 /*  
     物体类别替换的话，需要改的是：
-    1、double Z_c = 0.400; 83行
-    2、496行 :if( (pow(x_err, 2) + pow(y_err, 2)) < 1000 && (boxes_center[j].label == "banana") && (area > 2000)
-    3、objectPose.position.z = 0.040; 540行
+    1、double Z_c = 0.400; 86行
+    2、572行 :if( (pow(x_err, 2) + pow(y_err, 2)) < 1000 && (boxes_center[j].label == "banana") && (area > 2000)
+    3、objectPose.position.z = 0.040; 642行
     4、
 */
 
@@ -152,7 +152,7 @@ struct object_center {
     int label_int;
 };
 
-
+//没用到
 double GetIOU(cv::Rect_<float> bb_test, cv::Rect_<float> bb_gt)
 {
 	float in = (bb_test & bb_gt).area();
@@ -417,7 +417,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     cv::Mat test_ding = imgray.clone();  //创造一个imgray的副本 test_ding
     std::vector<object_center> boxes_center;  //用于存储检测到的目标的中心坐标信息。
 
-    //静态字符数组，包含了80种物体类别的名称。这些名称是用于目标检测算法输出的结果中标记检测到的物体所属的类别。
+    //包含了80种物体类别的名称。这些名称是用于目标检测算法输出的结果中标记检测到的物体所属的类别。
     static const char* class_names[] = {"person", "bicycle", "car", "motorcycle", "airplane", "bus",
                                         "train", "truck", "boat", "traffic light", "fire hydrant",
                                         "stop sign", "parking meter", "bench", "bird", "cat", "dog",
@@ -494,6 +494,8 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
         /*这行代码在图像上绘制一个矩形，覆盖了文本所在的区域，使得文本能够更清晰地展示。cv::Rect()指定了矩形的位置和大小，
         cv::Point()指定了矩形的左上角坐标，cv::Size()指定了矩形的大小。
         最后一个参数为负数，表示矩形内部被填充的颜色与边框颜色相同。*/
+
+        //标签矩形框
         cv::rectangle(image, cv::Rect(cv::Point(x, y), cv::Size(label_size.width, label_size.height + baseLine)),color, -1);
         //将标签和置信度分数的文本写在图像上
         cv::putText(image, text, cv::Point(x, y + label_size.height),
@@ -639,7 +641,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
             //在控制台输出目标物体在世界坐标系中的位置
             std::cout << "px = " << goalPose.position.x << ",  py = " << goalPose.position.y << ",  pz = " << goalPose.position.z << std::endl;
             objectPose = goalPose;
-            objectPose.position.z = 0.040; // banana 0.04 ？？
+            objectPose.position.z = 0.040; // banana 0.04  香蕉高度
             ang = (float)angle;
             worldPosition.publish(goalPose);//将goalPose消息发布到worldPosition话题上
             break;

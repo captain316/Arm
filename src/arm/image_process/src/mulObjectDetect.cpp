@@ -26,7 +26,6 @@
 
 */
 
-
 cv::Mat img_;
 std::vector<geometry_msgs::Pose> objects;
 std::vector<double> angs;
@@ -63,6 +62,7 @@ double Z_c = 0.440;
 
 cv::Mat computeRealPosition(cv::Mat& pixelPosition) 
 {
+    //香蕉相对夹爪的位姿
     cv:: Mat fingerFrame = R_inv * K_inv * pixelPosition - R_inv * T;
     // std::cout << "Fingers_frame is :" << std::endl;
     // std::cout << fingerFrame << std::endl;
@@ -429,6 +429,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
         cv::Point2f center = rect.center;
         int cx = int(center.x);
         int cy = int(center.y);
+
         int now = 0;
         for(int j = 0; j < boxes_center.size(); ++j) {
             int x_err = cx - boxes_center[j].cx;
@@ -439,7 +440,8 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
             //     flag = true;
             //     break;
             // }
-            // 去光照   换新环境需要调
+            // 去光照   换新环境需要调&& (area > 2000)
+            // std::cout << AllLabels.size() << std::endl;
             if( (pow(x_err, 2) + pow(y_err, 2)) < 1000 && (boxes_center[j].label == "banana") && (area > 2000)) {
                 flag = true;
                 now = j;
@@ -485,13 +487,11 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
             objectPose = goalPose;
             objectPose.position.z = 0.040;
             ang = (float)angle;
+
             worldPosition.publish(goalPose);
-            
             objects.push_back(objectPose);
             angs.push_back(ang);
-            boxes_center.erase(boxes_center.begin() + now);
-            
-            
+            boxes_center.erase(boxes_center.begin() + now);  
         }
     }
     // if(!objects.empty()) {
@@ -512,9 +512,9 @@ void receive_msg_call_back(const boost::shared_ptr<sensor_msgs::Image const>& ms
     cv::imshow("原图", img_);
     cv::waitKey(1);
     // cv::Mat img_ = cv::Mat(cv::Size(320, 320), CV_8UC3);
-    // cv::Mat img_;
-    
+    // cv::Mat img_;    
 }
+
 NanoDet* detector;
 bool responsePose(ur3_move::mulObjectsPosition::Request& req,
                   ur3_move::mulObjectsPosition::Response& res  ) {

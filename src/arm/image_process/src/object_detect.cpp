@@ -545,14 +545,5 @@ int main(int argc, char **argv)
     ROS_INFO("ready!");
     ros::spin();
     return 0;
-        /*该程序的主函数通过 ROS 初始化节点，并创建一个 NanoDet 对象来加载目标检测模型文件。然后，它将
-    订阅 /camera/rgb/image_raw 话题来获取摄像头的图像，并通过 receive_msg_call_back 函数进行处理。
-    在 receive_msg_call_back 函数中，它首先将 ROS 消息格式的图像数据转换为 OpenCV 格式，然后调用
-    NanoDet 对象的 detect 方法来进行目标检测。检测到的目标将被绘制在图像上，并发布到 process_image 
-    话题上，以便在 ROS RViz 中可视化。
-        如果检测到香蕉，程序将计算香蕉的位姿并发布到 worldPosition 话题上，以便机械臂控制节点获取并执行相应的运动。
-    另外，程序还创建了一个 ROS 服务 getObjectPose，以便其他节点可以通过调用该服务来获取当前检测到的香蕉的位姿信息。
-    需要注意的是，该程序依赖于一些 ROS 包和库，例如 roscpp、sensor_msgs、cv_bridge、image_transport 等。
-    此外，程序中使用的目标检测模型是 nanodet_m.xml，需要事先下载并放置在指定的路径下。*/
 
 }

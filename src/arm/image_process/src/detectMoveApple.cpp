@@ -355,11 +355,11 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     cv::Mat imgray;
     
     //去除光照
-    normalizeRGB1(image, dst);
-    cv::imshow("去光照", dst);
+    normalizeRGB(image, dst);
+    //cv::imshow("去光照", dst);
     
     cv::cvtColor(dst, imgray, cv::COLOR_BGR2GRAY);
-    cv::imshow("去光照后的灰度图像", imgray);
+    //cv::imshow("去光照后的灰度图像", imgray);
     cv::GaussianBlur(imgray, imgray, cv::Size(3, 3), 0.5, 0.5);
     // cv::imshow("平滑灰度图像", imgray);
     
@@ -456,7 +456,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
         cv::RotatedRect rect = cv::minAreaRect(contours[index]);
         int area = rect.size.height * rect.size.width;
         // 如果最小矩形框太小，直接滤过
-        if(area < 5000) continue;
+        if(area < 1000) continue;
         // 矩形的四个点：左下、左上、右上、右下
         cv::Mat boxPts;
         cv::boxPoints(rect, boxPts);
@@ -494,8 +494,13 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
             //     std::cout << "area = " << area << std::endl;
             // }
             
-            // 换新环境需要调 1000 banana 2000
-            if( (pow(x_err, 2) + pow(y_err, 2)) < 100 && (boxes_center[j].label == "apple" || boxes_center[j].label == "sports ball") && (area > 5000)) {
+            // // 换新环境需要调 1000 banana 2000
+            // if(boxes_center[j].label == "apple" || boxes_center[j].label == "sports ball" || boxes_center[j].label == "orange") {
+            //     std::cout << "(pow(x_err, 2) + pow(y_err, 2)) = " << (pow(x_err, 2) + pow(y_err, 2)) << std::endl;
+            //     std::cout << "area = " << area << std::endl;
+            // }
+            
+            if( (pow(x_err, 2) + pow(y_err, 2)) < 1000 && (boxes_center[j].label == "apple" || boxes_center[j].label == "sports ball") && (area > 100)) {
                 flag = true;
                 // std::cout << "(pow(x_err, 2) + pow(y_err, 2)) = " << (pow(x_err, 2) + pow(y_err, 2)) << std::endl;
                 // std::cout << "area = " << area << std::endl;

@@ -24,3 +24,6 @@ add -> By topic -> /rgb -> /image_raw -> Image
 	rosrun image_process detectMoveBanana
 	rosrun ur3_move trackBanana
 ```
+
+[ WARN] [1679377787.793732306]: "track_banana" passed to lookupTransform argument source_frame does not exist. 
+

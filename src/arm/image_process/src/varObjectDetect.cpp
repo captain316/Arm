@@ -22,7 +22,6 @@
 #include <algorithm>
 #include "ur3_move/varObjectsPosition.h"
 // #include <tf2/LinearMath/Quaternion.h> 
-
 /*
     本文件为识别多种物体（香蕉、苹果、橙子）的位姿，并一次性发送
 */
@@ -336,7 +335,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     // cv::Mat img;
     
     cv::Mat test_ding = image.clone();
-    std::vector<object_center> boxes_center;
+    std::vector<object_center> boxes_center;  
 
     static const char* class_names[] = {"person", "bicycle", "car", "motorcycle", "airplane", "bus",
                                         "train", "truck", "boat", "traffic light", "fire hydrant",
@@ -404,7 +403,6 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     // cv::threshold(imgray, imgray, 150, 255, cv::THRESH_BINARY);
     // 去光照后的 100
     // > 90 变 255  cv::THRESH_BINARY_INV相反 THRESH_BINARY
-    
     // std::cout << "----------------------------------------------------------------" << std::endl;
     cv::threshold(imgray, imgray, 86, 255, cv::THRESH_BINARY);
     // cv::adaptiveThreshold(imgray, imgray, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 3, 10);
@@ -417,7 +415,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
     cv::findContours(imgray, contours, hierarchy, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE );
     // std::cout << contours.size() << std::endl;
     for(int index = 0; index < contours.size(); ++index) {
-        bool flag = false;
+        bool flag = false; 
         // if(contours[index][0].x >= 320 || contours[index][0].y >= 320 || contours[index][0].x <= 10 || contours[index][0].y <= 10) {
         //     continue;
         // }
@@ -527,7 +525,7 @@ void draw_bboxes(cv::Mat& image, const std::vector<BoxInfo>& bboxes, object_rect
             objects.push_back(objectPose); // 待发送的所有的物体的位置
             angs.push_back(ang);           // 待发送的所有物体的角度
             names_.push_back(label);        // 待发送的所有物体的种类
-            boxes_center.erase(boxes_center.begin() + now);
+            boxes_center.erase(boxes_center.begin() + now); // ?
         } 
     }
     // return imgray;
@@ -559,8 +557,8 @@ bool my_function(geometry_msgs::Pose& pose1, geometry_msgs::Pose& pose2) {
 NanoDet* detector;
 bool responsePose(ur3_move::varObjectsPosition::Request& req,
                   ur3_move::varObjectsPosition::Response& res  ) {
+
     cv::cvtColor(img_, img_, cv::COLOR_RGB2BGR);
-    
     object_rect effect_roi;
     cv::Mat resized_img;
     // cv::resize(img_,img_,cv::Size(min_width, min_height));

@@ -281,7 +281,7 @@ void cartesianPlanning(moveit::planning_interface::MoveGroupInterface& arm,
         target_posestamp.header.stamp = ros::Time::now();
         pose_pub_.publish(target_posestamp);
         sleep(2);
-        erz = -0.053;
+        erz = -0.053; //第一次夹物体的高度 ？
     } else {
         erz = -0.08;
     }
@@ -341,7 +341,7 @@ void cartesianPlanningNext(moveit::planning_interface::MoveGroupInterface& arm,
         timecount++;
     }
     while (timecount < 120 && ros::ok()) {   
-        fake_pose.position.x +=  erx / 90;   
+        fake_pose.position.x +=  erx / 90; 
         fake_pose.position.y +=  ery / 90;   
                         
         target_posestamp.pose = fake_pose;
@@ -364,7 +364,7 @@ void cartesianPlanningNext(moveit::planning_interface::MoveGroupInterface& arm,
     } else {
         erz = -0.045;
     }
-    erz -= 0.1;
+    erz -= 0.1;  //?
     
     while(timecount < 180 && ros::ok()) {
         fake_pose.position.z +=  erz / 60; 
@@ -520,8 +520,6 @@ int main(int argc, char **argv)  //主函数
         Gripper_control("open", gripper_state);
         sleep(2);
 
-    
-    
     }
 
    

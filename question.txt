@@ -8,3 +8,39 @@ trackBanana.cpp问题：
 	7. 418行，419行，调什么？改什么？
 	8. 445行，-0.08？ timecount < 90停止？ 这个循环作用？
 
+detectMoveBanana.cpp问题：
+        1、86行 double Z_c = 0.400;   代表什么？
+        2、156行，GetIOU（）没用到。
+        3、461和491行的绘画矩形框有何区别？
+	4. 572行 :if( (pow(x_err, 2) + pow(y_err, 2)) < 1000 && (boxes_center[j].label == "banana") && (area > 2000)
+	5. 642行 objectPose.position.z = 0.040;
+
+
+其他：
+	1.computeRealPosition（）函数，静态识别与动态识别的实现不同
+	2.varObjectDetect.cpp的337行：image.clone()？其他文件都是imgray.clone(); 区别？
+	3.mulObjectDetect.cpp和object_detect.cpp的360行cv::rectangle（）被注释，移动的和多个的识别的没有注释。 可有可无？同样mulObjectDetect.cpp的385~387行被注释
+	4.varObjectDetect.cpp的458，459行语句？
+	5.为什么varObjectDetect.cpp的466行cv::circle（）函数的第一个参数与其他文件中的不同？即为什么是test_ding而不是image？
+	6.varObjectDetect.cpp的486~497行的作用？
+	7.varObjectDetect.cpp的516~522行的作用？为何else ang = 0.0?
+	8.boxes_center.erase(boxes_center.begin() + now); ?  528行
+	9.mulObjectDetect.cpp和varObjectDetect.cpp的receive_msg_call_back（）函数为何如此简略？（503、535行），不需要调用resize_uniform（）、draw_bboxes（）函数吗？
+	10.mulObjectDetect.cpp和varObjectDetect.cpp的bool responsePose（）函数相比于detectMoveBanana.cpp的函数更为复杂，有什么区别？
+
+
+ur_move问题：
+	1.varObjects.cpp的cartesianPlanning（）与cartesianPlanningNext（）函数，相比于 mulObjects.cpp与 unionPlanning.cpp的函数，多了一个参数std::string label
+	2.varObjects.cpp的277~287行。if(label == "banana") erz = -0.053 为什么与mulObjects.cpp的erz = -0.03 不同？且else erz = -0.08 这个数值？ 
+	3.varObjects.cpp的332行，erz = 0.1表示什么？ （其他文件没有）
+	4.varObjects.cpp的333~334行与mulObjects.cpp的328~330行的对比差异：
+		1)timecount < 90 与timecount < 30。这个阈值的选定？
+		2).x +=  erx / 90  .y +=  ery / 90 以及.z +=  erz / 30 ？ erz的分母选择？
+	5.mulObjects.cpp的340~346行在varObjects.cpp的相应位置没有。为什么？
+	6.varObjects.cpp的343-344行 <120  erz/90？ 356~367行？
+	7.varObjects.cpp的396行与mulObjects.cpp的374行的初始化节点名不同，这个需要注意什么么?
+	8.varObjects.cpp的477行.y + 0.02 ？ 480行 作用？
+
+
+
+

@@ -279,7 +279,7 @@ void cartesianPlanning(moveit::planning_interface::MoveGroupInterface& arm,
     target_posestamp.header.stamp = ros::Time::now();
     pose_pub_.publish(target_posestamp);
     sleep(2);
-    erz = -0.05;
+    erz = -0.05; 
     while(timecount < 100 && ros::ok()) {
         fake_pose.position.z +=  erz / 10; 
         target_posestamp.pose = fake_pose;

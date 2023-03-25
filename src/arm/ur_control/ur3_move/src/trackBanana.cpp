@@ -138,7 +138,7 @@ moveit_msgs::AttachedCollisionObject attachObject(
 //set_gripper表示需要设置的夹爪状态，可以是"open"或"close"；gripper_state是当前夹爪的状态，初始化应为开。
 void Gripper_control(std::string set_gripper, bool& gripper_state)
 {
-	//bool gripper_state=1;//夹爪状态，1为开，0为关，初始化应为开
+	//bool gripper_state=1;   //夹爪状态，1为开，0为关，初始化应为开
 	bool gripper_cmd = 0;
     bool set_state = 1;
 	if(set_gripper == "open") gripper_cmd = 0;
@@ -175,7 +175,7 @@ void Gripper_control(std::string set_gripper, bool& gripper_state)
             set_state = 0;
 		}
 
-		gripper_state = !gripper_state;
+		gripper_state = !gripper_state; 
         ros::WallDuration(3).sleep();
         if(set_state)
 		    ROS_INFO("gripper set to %s success" ,set_gripper.c_str());
@@ -320,7 +320,7 @@ class TrackBanana
             }
 
             // target_posestamp.pose = target_pose;
-            //更新机械臂末端的目标位置，使其向当前香蕉的方向移动
+            // 偏移  看到目标
             target_pose.position.x += 0.06;
             target_pose.position.y -= 0.03;
 
@@ -355,7 +355,7 @@ class TrackBanana
                 
                 continue;
             }
-            //????
+            //不是第一次抓取
             target_posestamp.pose.position = target_pose.position;
             target_posestamp.pose.orientation = init_pose.pose.orientation;
             target_posestamp.header.frame_id = "base_link";

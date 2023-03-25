@@ -327,8 +327,7 @@ void cartesianPlanningNext(moveit::planning_interface::MoveGroupInterface& arm,
 
     while (timecount < 90 && ros::ok()) {   
         fake_pose.position.x +=  erx / 90;   
-        fake_pose.position.y +=  ery / 90;   
-                        
+        fake_pose.position.y +=  ery / 90;                      
         target_posestamp.pose = fake_pose;
         target_posestamp.header.frame_id = "base_link";
         target_posestamp.header.stamp = ros::Time::now();
